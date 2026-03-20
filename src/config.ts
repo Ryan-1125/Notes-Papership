@@ -58,6 +58,11 @@ export const profileConfig: ProfileConfig = {
 	bio: "在二进制的世界里，筑一阁以听雨，守一星以指路。",
 	links: [
 		{
+			name: "blogs",
+			icon: "cib:bamboo",
+			url: "https://blogs.papership.top",
+		},
+		{
 			name: "X",
 			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
