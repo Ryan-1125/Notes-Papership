@@ -26,7 +26,7 @@ import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://https://Ryan-1125.github.io/",
+	site: "https://github.com/Ryan-1125/Notes-Papership",
 	base: "/",
 	trailingSlash: "always",
 	integrations: [
