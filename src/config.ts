@@ -63,13 +63,6 @@ export const profileConfig: ProfileConfig = {
 			url: "https://blogs.papership.top",
 		},
 		{
-			name: "X",
-			icon: "fa6-brands:x-twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://x.com/Ryan411925",
-		},
-		{
 			name: "Bilibili",
 			icon: "fa6-brands:bilibili",
 			url: "https://space.bilibili.com/510746790?spm_id_from=333.1007.0.0",
@@ -81,7 +74,9 @@ export const profileConfig: ProfileConfig = {
 		},
 		{
 			name: "GitHub",
-			icon: "fa6-brands:github",
+			icon: "fa6-brands:github", // Visit https://icones.js.org/ for icon codes
+			// You will need to install the corresponding icon set if it's not already included
+			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://github.com/Ryan-1125",
 		},
 	],
