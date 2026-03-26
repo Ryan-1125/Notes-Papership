@@ -4,7 +4,7 @@ description: 笔记站和博客站新增评论区！欢迎大家留言~
 published: 2026-03-26
 tags: [博客指南]
 category: 博客指南
-draft: true
+draft: false
 ---
 
 # Giscus评论区接入步骤

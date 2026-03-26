@@ -3,7 +3,7 @@ title: Draft 样例
 published: 2022-07-01
 tags: [博客指南]
 category: 博客指南
-draft: true
+draft: false #ture就是不可见
 ---
 
 # This Article is a Draft
