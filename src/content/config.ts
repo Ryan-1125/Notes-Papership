@@ -40,5 +40,6 @@ const specCollection = defineCollection({
 });
 
 export const collections = {
+	posts: _postsCollection,
 	spec: specCollection,
 };
