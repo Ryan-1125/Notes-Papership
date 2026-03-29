@@ -31,6 +31,7 @@ const specCollection = defineCollection({
 					description: z.string(),
 					link: z.string(),
 					icon: z.string().optional(),
+					category: z.string(),
 				}),
 			)
 			.optional(),

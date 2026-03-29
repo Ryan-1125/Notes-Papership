@@ -20,13 +20,16 @@ if (!cornerEntry) {
 // 解析 MD 前言与资源列表
 const { Content } = await render(cornerEntry);
 const { resources = [] } = cornerEntry.data;
+
+// 👇 自动提取所有分类（去重）
+const categories = Array.from(new Set(resources.map((item) => item.category)));
 ---
 
 <MainGridLayout title={i18n(I18nKey.corner)}>
   <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
     <div class="card-base z-10 px-9 py-6 relative w-full">
 
-      <!-- 前言区域（渲染 MD 内容） -->
+      <!-- 前言区域 -->
       <div class="mb-6 text-90">
         <Markdown>
           <Content />
@@ -36,31 +39,43 @@ const { resources = [] } = cornerEntry.data;
       <!-- 分割线 -->
       <div class="h-[1px] w-full bg-black/5 dark:bg-white/10 my-8"></div>
 
-      <!-- 学习资源卡片列表 -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {resources.map((item) => (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95 border border-transparent hover:border-[var(--primary)]/20 shadow-sm"
-          >
-            <img
-              src={item.icon}
-              alt={item.name}
-              class="w-10 h-10 rounded-lg object-contain mr-4 shrink-0 transition-transform group-hover:rotate-3"
-            />
-            <div class="overflow-hidden">
-              <div class="font-bold text-lg text-90 group-hover:text-[var(--primary)] truncate">
-                {item.name}
-              </div>
-              <div class="text-sm text-50 line-clamp-1">
-                {item.description}
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
+      <!-- 👇 分类展示学习资源 -->
+      {categories.map((category) => (
+        <div class="mb-10 last:mb-0">
+          <!-- 分类标题 -->
+          <h2 class="text-xl font-bold mb-4 text-[var(--primary)]">
+            {category}
+          </h2>
+
+          <!-- 卡片网格 -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {resources
+              .filter(item => item.category === category)
+              .map((item) => (
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95 border border-transparent hover:border-[var(--primary)]/20 shadow-sm"
+                >
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    class="w-10 h-10 rounded-lg object-contain mr-4 shrink-0 transition-transform group-hover:rotate-3"
+                  />
+                  <div class="overflow-hidden">
+                    <div class="font-bold text-lg text-90 group-hover:text-[var(--primary)] truncate">
+                      {item.name}
+                    </div>
+                    <div class="text-sm text-50 line-clamp-1">
+                      {item.description}
+                    </div>
+                  </div>
+                </a>
+              ))}
+          </div>
+        </div>
+      ))}
 
     </div>
   </div>
