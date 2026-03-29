@@ -1,0 +1,67 @@
+---
+// src/pages/corner.astro
+// 知隅 - 学习资源收藏页
+import { getEntry, render } from "astro:content";
+import Markdown from "@components/misc/Markdown.astro";
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+// 预渲染，避免被动态路由 [...page].astro 拦截
+export const prerender = true;
+
+// 读取知隅页面数据
+const cornerEntry = await getEntry("spec", "corner");
+
+if (!cornerEntry) {
+	throw new Error("Corner content not found");
+}
+
+// 解析 MD 前言与资源列表
+const { Content } = await render(cornerEntry);
+const { resources = [] } = cornerEntry.data;
+---
+
+<MainGridLayout title={i18n(I18nKey.corner)}>
+  <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+    <div class="card-base z-10 px-9 py-6 relative w-full">
+
+      <!-- 前言区域（渲染 MD 内容） -->
+      <div class="mb-6 text-90">
+        <Markdown>
+          <Content />
+        </Markdown>
+      </div>
+
+      <!-- 分割线 -->
+      <div class="h-[1px] w-full bg-black/5 dark:bg-white/10 my-8"></div>
+
+      <!-- 学习资源卡片列表 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {resources.map((item) => (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center p-4 rounded-xl hover:bg-[var(--btn-plain-bg-hover)] transition-all group active:scale-95 border border-transparent hover:border-[var(--primary)]/20 shadow-sm"
+          >
+            <img
+              src={item.icon}
+              alt={item.name}
+              class="w-10 h-10 rounded-lg object-contain mr-4 shrink-0 transition-transform group-hover:rotate-3"
+            />
+            <div class="overflow-hidden">
+              <div class="font-bold text-lg text-90 group-hover:text-[var(--primary)] truncate">
+                {item.name}
+              </div>
+              <div class="text-sm text-50 line-clamp-1">
+                {item.description}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</MainGridLayout>

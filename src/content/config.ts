@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content";
 
-const postsCollection = defineCollection({
+const _postsCollection = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		published: z.date(),
@@ -19,10 +19,25 @@ const postsCollection = defineCollection({
 		nextSlug: z.string().default(""),
 	}),
 });
+
 const specCollection = defineCollection({
-	schema: z.object({}),
+	schema: z.object({
+		title: z.string().optional(),
+		// 知隅页面新增：学习资源列表
+		resources: z
+			.array(
+				z.object({
+					name: z.string(),
+					description: z.string(),
+					link: z.string(),
+					icon: z.string().optional(),
+				}),
+			)
+			.optional(),
+		// 其他字段...
+	}),
 });
+
 export const collections = {
-	posts: postsCollection,
 	spec: specCollection,
 };
