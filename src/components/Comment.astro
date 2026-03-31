@@ -1,26 +1,71 @@
-<div class="giscus-container mt-10">
-  <script
-    src="https://giscus.app/client.js"
-    data-repo="Ryan-1125/Notes-Papership"
-    data-repo-id="R_kgDORrffvg"
-    data-category="General"
-    data-category-id="DIC_kwDORrffvs4C5TuH"
-    data-mapping="title"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="top"
-    data-theme="catppuccin_mocha"
-    data-lang="zh-CN"
-    crossorigin="anonymous"
-    async>
-  </script>
+---
+// 1. 从项目配置文件中导入评论相关配置
+// 所有 repo、id、分类等信息都存在 config.ts 里
+import { commentConfig } from "../config";
+---
+
+<!-- 2. 评论区外层容器：控制上下间距 + 居中样式 -->
+<div class="mt-8 giscus-container">
+  <!-- giscus 挂载点：脚本会自动把评论区渲染到这里 -->
+  <section class="giscus mx-auto w-full"></section>
 </div>
 
-<style>
-  .giscus-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+<!-- 3. Giscus 官方核心脚本 -->
+<script 
+  is:inline          
+  data-astro-rerun   
+  src="https://giscus.app/client.js"  
+  
+  
+  data-repo={commentConfig.repo}
+  data-repo-id={commentConfig.repoId}
+  data-category={commentConfig.category}
+  data-category-id={commentConfig.categoryId}
+  data-mapping={commentConfig.mapping}
+  data-strict={commentConfig.strict}
+  data-reactions-enabled={commentConfig.reactionsEnabled}
+  data-emit-metadata={commentConfig.emitMetadata}
+  data-input-position={commentConfig.inputPosition}
+  data-lang={commentConfig.lang}
+  data-loading={commentConfig.loading}
+
+  crossorigin="anonymous"
+  async  
+>
+</script>
+
+<!-- 4. 主题自动切换核心逻辑 -->
+<script is:inline>
+  // 更新 Giscus 主题：亮/暗色自动切换
+  function updateGiscusTheme() {
+    // 判断当前网站是否是暗色模式
+    const theme = document.documentElement.classList.contains('dark') 
+      ? 'catppuccin_mocha'   // 暗色 → 用 catppuccin_mocha 主题
+      : 'light'; // 亮色 → 用 light 主题
+
+    // 获取 Giscus 渲染的 iframe
+    const iframe = document.querySelector('iframe.giscus-frame')
+    
+    // 如果 iframe 存在，发送消息切换主题
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: theme } } },
+        'https://giscus.app'
+      )
+    }
   }
-</style>
+
+  // 监听网站主题变化
+  const observer = new MutationObserver(updateGiscusTheme)
+  observer.observe(document.documentElement, { 
+    attributes: true, 
+    attributeFilter: ['class'] 
+  })
+
+  // 页面初次加载完成时，自动设置一次主题
+  window.addEventListener('message', (event) => {
+    if (event.origin !== 'https://giscus.app') return
+    if (!(typeof event.data === 'object' && event.data.giscus)) return
+    updateGiscusTheme()
+  })
+</script>

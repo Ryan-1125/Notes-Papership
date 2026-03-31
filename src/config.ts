@@ -94,3 +94,19 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 	// Please select a dark theme, as this blog theme currently only supports dark background color
 	theme: "github-dark",
 };
+
+// Comment configuration for Giscus.
+export const commentConfig = {
+	enable: true,
+	repo: "Ryan-1125/Notes-Papership", // 你的 GitHub 仓库名
+	repoId: "R_kgDORrffvg", // 你的仓库 ID（从 Giscus 官网获取）
+	category: "General", // 你在仓库里创建的 Discussions 分类名
+	categoryId: "DIC_kwDORrffvs4C5TuH", // 你的分类 ID（从 Giscus 官网获取）
+	mapping: "title", // 保持不变，用文章路径映射
+	strict: "0",
+	reactionsEnabled: "0", // 1：开启表情反应
+	emitMetadata: "0",
+	inputPosition: "top", // 评论输入框在顶部
+	lang: "zh-CN", // 中文界面
+	loading: "lazy", // 懒加载评论区
+};
