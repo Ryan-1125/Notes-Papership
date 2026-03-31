@@ -16,6 +16,19 @@ resources:
     category: "中大"
 
 
+  - name: "操作系统原理"
+    description: "鸭大坑导"
+    link: "https://www.bilibili.com/video/BV1Rt91YfE3n/?spm_id_from=333.1387.favlist.content.click&vd_source=530d3344272b10bc9736a35fb1088be9"
+    icon: "https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico"
+    category: "网课"
+
+  - name: "王道408考研"
+    description: "王道考研408免费课程"
+    link: "https://space.bilibili.com/95228778/lists/5238325?type=season"
+    icon: "http://home.cskaoyan.com/img/logo1.47131449.png"
+    category: "网课"
+
+
   - name: "LeetCode"
     description: "算法刷题必备"
     link: "https://leetcode.cn"
