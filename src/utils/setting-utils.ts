@@ -1,9 +1,4 @@
-import {
-	AUTO_MODE,
-	DARK_MODE,
-	DEFAULT_THEME,
-	LIGHT_MODE,
-} from "@constants/constants.ts";
+import { AUTO_MODE, DARK_MODE, LIGHT_MODE } from "@constants/constants.ts";
 import { expressiveCodeConfig } from "@/config";
 import type { LIGHT_DARK_MODE } from "@/types/config";
 
@@ -57,5 +52,5 @@ export function setTheme(theme: LIGHT_DARK_MODE): void {
 }
 
 export function getStoredTheme(): LIGHT_DARK_MODE {
-	return (localStorage.getItem("theme") as LIGHT_DARK_MODE) || DEFAULT_THEME;
+	return (localStorage.getItem("theme") as LIGHT_DARK_MODE) || DARK_MODE;
 }
