@@ -60,6 +60,13 @@ resources:
     icon: "https://static.char123.com/images/icon/mobile-icon.png"
     category: "开发教程"
 
+
+  - name: "dotcpp"
+    description: "C语言网"
+    link: "https://www.dotcpp.com/"
+    icon: "https://www.dotcpp.com/oj/template/bs3/img/c_logo.png"
+    category: "开发教程"
+
   - name: "Markdown 教程"
     description: "Markdown 基本语法"
     link: "https://markdown.com.cn/basic-syntax/"

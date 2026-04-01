@@ -69,9 +69,9 @@ export const profileConfig: ProfileConfig = {
 			url: "https://space.bilibili.com/510746790?spm_id_from=333.1007.0.0",
 		},
 		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://steamcommunity.com/profiles/76561199722712686/",
+			name: "LeetCode",
+			icon: "fa6-solid:book-atlas",
+			url: "https://leetcode.cn",
 		},
 		{
 			name: "GitHub",
