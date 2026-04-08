@@ -1,6 +1,6 @@
 ---
-title: C++的一些输入输出
-published: 2025-04-07
+title: C++有关素数
+published: 2025-04-08
 description: "一些C++笔记"
 tags: [全部笔记,专必,C++]
 category: C++
