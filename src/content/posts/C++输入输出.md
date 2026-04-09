@@ -1,5 +1,5 @@
 ---
-title: C++的一些输入输出
+title: C++的输入输出
 published: 2025-04-07
 description: "一些C++笔记"
 tags: [全部笔记,专必,C++]
