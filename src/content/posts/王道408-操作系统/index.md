@@ -8,6 +8,8 @@ draft: false
 ---
 
 <!--#操作系统（OS）-->
+该笔记来自github的笔记仓库：
+::github{repo="helloworldzsq/wang-dao-408-notes/blob/master/408"} 
 
 ## 1.计算机系统概述
 
@@ -19,7 +21,8 @@ draft: false
 
 > 操作系统在系统中的位置
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/fe9e38177511e4b0e4027a6a0e98ffb2.png)
+<!--![alt text](image.png)-->
+![alt text](image-1.png)
 
 > 操作系统的功能和目标
 
@@ -32,8 +35,7 @@ draft: false
 
 2. 用户和计算机硬件之间的接口
 
-![image-20210803155903894](https://img-blog.csdnimg.cn/img_convert/682bed8e1943ba0004c2055966760a32.png)
-
+![alt text](image-2.png)
 3. 对硬件机器的拓展
 
 > 操作系统的四个特征
@@ -48,7 +50,7 @@ draft: false
 
 共享即资源共享，是指系统中的资源内存中多个并发执行的进程共同使用。
 
-![image-20210803160930275](https://img-blog.csdnimg.cn/img_convert/8cb1f49e8ac62fd06470326751283d9f.png)
+![alt text](image-3.png)
 
 所谓的“同时”往往是宏观上的，而在微观上，这些进程可能是交替地对该资源进行访问的(即分时共享)
 
@@ -61,7 +63,7 @@ draft: false
 
 虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。
 
-![image-20210803161622408](https://img-blog.csdnimg.cn/img_convert/33ac7e25259c9f6616d74c77789cff96.png)
+![alt text](image-4.png)
 
 4. 异步
 
@@ -73,25 +75,25 @@ draft: false
 
 - 指令
 
-![image-20210803163918128](https://img-blog.csdnimg.cn/img_convert/c3d1276e4e694448d8c726df56840444.png)
+![alt text](image-5.png)
 
 - CPU
 
-![image-20210803163953265](https://img-blog.csdnimg.cn/img_convert/1376755e1fea3a6a9de7e62ca02461b4.png)
+![alt text](image-6.png)
 
 - 程序
 
-![image-20210803164014423](https://img-blog.csdnimg.cn/img_convert/0d8b6714442b0f3cf443a7caa9500c66.png)
+![alt text](image-7.png)
 
 - 操作系统的内核
 
 由于内核划分功能的不同，内核分为大内核和微内核。
 
-![image-20210803164737354](https://img-blog.csdnimg.cn/img_convert/414046c0f1b465596777ecf359e87b32.png)
+![alt text](image-8.png)
 
 - 大内核和微内核的优缺点
 
-![image-20210803164935729](https://img-blog.csdnimg.cn/img_convert/a7546e379bb46da49bc3a59e6741f076.png)
+![alt text](image-9.png)
 
 类比:
 
@@ -117,7 +119,7 @@ draft: false
 
 - 中断信号的来源来自CPU内部称为内中断，外部称为外中断。
 
-![image-20210803172625970](https://img-blog.csdnimg.cn/img_convert/f91b708e8dc66811d113b9fb0e69890a.png)
+![alt text](image-10.png)
 
 ### 4.系统调用
 
@@ -125,7 +127,7 @@ draft: false
 
 “系统调用”是操作系统提供给应用程序（程序员/编程人员）使用的接口，可以理解为一种可供应用程序调用的特殊函数，应用程序可以发出系统调用请求来获得操作系统的服务。
 
-![image-20210803173308247](https://img-blog.csdnimg.cn/img_convert/d119d41b87d6698af254bb54c388f63e.png)
+![alt text](image-11.png)
 
 #### 2.作用
 
@@ -156,9 +158,7 @@ draft: false
 
 **PCB是进程存在的唯一标识。**
 
-
-
-![image-20210804132427626](https://img-blog.csdnimg.cn/img_convert/37d1c420af34f332857bb3718a22689b.png)
+![alt text](image-12.png)
 
 #### 2.进程的组织方式
 
@@ -167,13 +167,12 @@ draft: false
 
 相当于java中的链表和数组。
 
-![image-20210804133435317](https://img-blog.csdnimg.cn/img_convert/202202b3dbf97314063939d4df5c5236.png)
-
-
+![alt text](image-13.png)
 
 #### 3.进程的特征
 
-![image-20210804133900620](https://img-blog.csdnimg.cn/img_convert/127792e5036ff16b86bf3e6ebeb1bfd0.png)
+![alt text](image-14.png)
+
 
 ### 2.进程的状态和转换
 
@@ -181,21 +180,15 @@ draft: false
 
 进程是程序的一次执行。在这个过程中，进程的状态会有各种变化。为了方便各个进程的管理，操作系统将进程划分为几个状态。
 
-![image-20210804134612092](https://img-blog.csdnimg.cn/img_convert/d2cb6a8ab8fa8d9478c3f33cc97d95df.png)
-
-
-
-
+![alt text](image-15.png)
 
 除此之外，进程还有两种状态。
 
-![image-20210804134807573](https://img-blog.csdnimg.cn/img_convert/6eff7a6300e0a9f8fbacdc6811dcde91.png)
-
-
+![alt text](image-16.png)
 
 #### 2.转换
 
-![image-20210804135200848](https://img-blog.csdnimg.cn/img_convert/e3bb02ed85fbde30d8e7f6a53d6f1432.png)
+![alt text](image-17.png)
 
 
 
@@ -211,7 +204,7 @@ draft: false
 
 原语采用 “关中断指令” 和 “开中断指令” 来实现。 注意： 原语运行在核心态。
 
-![image-20210804140224825](https://img-blog.csdnimg.cn/img_convert/898802e6075ffa6a41d16e06342f1101.png)
+![alt text](image-18.png)
 
 
 
@@ -226,7 +219,7 @@ draft: false
 
 具体实现如图所示：
 
-![image-20210804140655847](https://img-blog.csdnimg.cn/img_convert/7ae4afc1ea4d3c3628ec52b99b228917.png)
+![alt text](image-19.png)
 
 
 
@@ -242,7 +235,7 @@ draft: false
 
 #### 1.共享存储
 
-![image-20210804141304538](https://img-blog.csdnimg.cn/img_convert/3e425e65a1e27ad00a15c004b5503900.png)
+![alt text](image-20.png)
 
 
 
@@ -254,7 +247,7 @@ draft: false
 4.**如果没写满，就不允许读。如果没读空，就不允许写。**
 5．数据一旦被读出，就从管道中被抛弃，这就意味着**读进程最多只能有一个，否则可能会有读错数据的情况。**
 
-![image-20210804141624412](https://img-blog.csdnimg.cn/img_convert/14748e1b28c2344372baa69437fb885f.png)
+![alt text](image-21.png)
 
 #### 3.消息传递
 
@@ -262,7 +255,7 @@ draft: false
 
 类似于Http协议。
 
-![image-20210804142126570](https://img-blog.csdnimg.cn/img_convert/da5a742699dbec1bd5288c11f3f3d496.png)
+![alt text](image-22.png)
 
 ### 5.线程概念和多线程模型
 
@@ -276,15 +269,15 @@ draft: false
 
 - 引入线程后，进程作为除CPU之外的系统资源的分配单元。
 
-![image-20210804142809083](https://img-blog.csdnimg.cn/img_convert/3551b2efc325d9eeb84ba20b42039ce7.png)
+![alt text](image-23.png)
 
 #### 2.线程分类
 
 1. 用户级线程
 
-- 用户级线程由应用程序通过线程库实现。**所有的线程管理工作都由应用程序负责（包括线程切换)**
+- 用户级线程由应用程序通过线程库实现。**所有的线程管理工作都由应用程序负责（包括线程切换）**
 - 用户级线程中，线程切换可以在用户态下即可完成，**无需操作系统干预。**
-- 在用户看来，是有多个线程。但是在操作系统内核看来，并意识不到线程的存在。（用户级线程对用户不透明，对操作系统透明)
+- 在用户看来，是有多个线程。但是在操作系统内核看来，并意识不到线程的存在。（用户级线程对用户不透明，对操作系统透明）
 - 可以这样理解，“用户级线程”就是“从用户视角看能看到的线程”。
 
 2. 内核级线程
@@ -302,7 +295,7 @@ draft: false
 - 优点:用户级线程的切换在用户空间即可完成，不需要切换到核心态，**线程管理的系统开销小，效率高**
 - 缺点:当一个用户级线程被阻塞后，整个进程都会被阻塞，并发度不高。**多个线程不可在多核处理机上并行运行**
 
-![image-20210804144200566](https://img-blog.csdnimg.cn/img_convert/b7e1c04ce8954a471ee08f95df17be03.png)
+![alt text](image-24.png)
 
 > 一对一模型
 
@@ -310,14 +303,14 @@ draft: false
 - 优点:当一个线程被阻塞后，别的线程还可以继续执行，并发能力强。**多线程可在多核处理机上并行执行。**
 - 缺点:一个用户进程会占用多个内核级线程，线程切换由操作系统内核完成，需要切换到核心态，**因此线程管理的成本高，开销大。**
 
-![image-20210804144508904](https://img-blog.csdnimg.cn/img_convert/30546ad553f8744f00864f7a3b4399aa.png)
+![alt text](image-25.png)
 
 > 多对多模型
 
 - 多对多模型:n用户级线程映射到m个内核级线程(n >=m)。每个用户进程对应m个内核级线程。
 - 克服了多对一模型并发度不高的缺点，又克服了一对一模型中一个用户进程占用太多内核级线程，开销太大的缺点。
 
-![image-20210804144634167](https://img-blog.csdnimg.cn/img_convert/a42d433bc67c626ca4be89520a9b6572.png)
+![alt text](image-26.png)
 
 ### 7.处理机调度的概念和层次
 
@@ -332,10 +325,10 @@ draft: false
 #### 1.高级调度
 
 - 由于内存空间有限，有时无法将用户提交的作业全部放入内存，因此就需要确定某种规则来决定将作业调入内存的顺序。
-- 高级调度（作业调度)。按一定的原则从外存上处于后备队列的作业中挑选一个(或多个）作业，给他们分配内存等必要资源，并建立相应的进程（建立PCB)，以使它（们）获得竞争处理机的权利。
+- 高级调度（作业调度）。按一定的原则从外存上处于后备队列的作业中挑选一个(或多个）作业，给他们分配内存等必要资源，并建立相应的进程（建立PCB)，以使它（们）获得竞争处理机的权利。
 - **高级调度是辅存（外存）与内存之间的调度**。每个作业只调入一次，调出一次。作业调入时会建立相应的PCB，作业调出时才撤销PCB。**高级调度主要是指调入的问题**，因为只有调入的时机需要操作系统来确定，调出的时机必然是作业运行结束才调出。
 
-![image-20210804152012091](https://img-blog.csdnimg.cn/img_convert/6a9a38fbdf651ec632a50274cea46f70.png)
+![alt text](image-27.png)
 
 #### 2.中级调度
 
@@ -344,7 +337,7 @@ draft: false
 - **中级调度（内存调度），就是要决定将哪个处于挂起状态的进程重新调入内存。**
 - 一个进程可能会被多次调出、调入内存，因此**中级调度发生的频率要比高级调度更高。**
 
-![image-20210804152341270](https://img-blog.csdnimg.cn/img_convert/37c75d014d6c0816607b1eb690d31a11.png)
+![alt text](image-28.png)
 
 
 
@@ -354,7 +347,7 @@ draft: false
 
 - 挂起状态又可以进一步细分为就绪挂起，堵塞挂起两种状态。
 
-![image-20210804152935709](https://img-blog.csdnimg.cn/img_convert/2d7353e5c69a5b2f8e9e7041d3593103.png)
+![alt text](image-29.png)
 
 #### 3.低级调度
 
@@ -362,17 +355,17 @@ draft: false
 - 进程调度是操作系统中最基本的一种调度，在一般的操作系统中都必须配置进程调度。
 - 进程调度的频率很高，一般几十毫秒一次。
 
-![image-20210804153047419](https://img-blog.csdnimg.cn/img_convert/5447df82195ed45119ff23ddad012205.png)
+![alt text](image-30.png)
 
 #### 4.三种调度的联系和对比
 
-![image-20210804153249686](https://img-blog.csdnimg.cn/img_convert/002c477097ce9a50c6d7bd7690471560.png)
+![alt text](image-31.png)
 
 ### 8.进程调度的时机，切换过程和方式
 
 #### 1.进程调度的时机
 
-![image-20210805140446449](https://img-blog.csdnimg.cn/img_convert/3189df2592fc681dea9a6a830e205371.png)
+![alt text](image-32.png)
 
 
 
@@ -388,15 +381,14 @@ draft: false
 
 > 优点
 
-- 实现简单,系统开销小但是无法及时处理紧急任务，适合于早期的批处理系统
+ 实现简单,系统开销小但是无法及时处理紧急任务，适合于早期的批处理系统
 
-=============================================================================================================================================================================================================================================================================================================
 
 - 剥夺调度方式，又称抢占方式。当一个进程正在处理机上执行时，如果有一个更重要或更紧迫的进程需要使用处理机，则立即暂停正在执行的进程，将处理机分配给更重要紧迫的那个进程。
 
 > 优点
 
-- 可以优先处理更紧急的进程，也可实现让各进程按时间片轮流执行的功能（通过时钟中断）。适合于分时操作系统、实时操作系统
+ 可以优先处理更紧急的进程，也可实现让各进程按时间片轮流执行的功能（通过时钟中断）。适合于分时操作系统、实时操作系统
 
 #### 3.进程的切换与过程
 
@@ -421,7 +413,7 @@ draft: false
 - CPU利用率： CPU"忙碌"的时间占总时间的比例。
 - 系统吞吐量：单位时间内完成作业的数量。
 
-![image-20210805142159718](https://img-blog.csdnimg.cn/img_convert/279ed1d5604f327f61f532fa69fe2189.png)
+![alt text](image-33.png)
 
 - 周转时间：是指从作业被提交给系统开始，到作业完成为止的时间间隔。
 
@@ -431,7 +423,7 @@ draft: false
 
 由于在周转时间相同的情况下，运行时间不同的作业，给用户的感觉是不一样的，所以提出了带权周转时间的概念。
 
-![image-20210805142921145](https://img-blog.csdnimg.cn/img_convert/1ea90ebefb8ebaca1a61217854393b9d.png)
+![alt text](image-34.png)
 
 
 
@@ -446,19 +438,19 @@ draft: false
 
 #### 1.先来先服务（FCFS，First Come First Serve）
 
-![image-20210805144150920](https://img-blog.csdnimg.cn/img_convert/ddd1128e6e06e3683a8615a80c6dc92f.png)
+![alt text](image-35.png)
 
 #### 2.短作业优先（SJF，Shortest Job First）
 
-![image-20210805145121363](https://img-blog.csdnimg.cn/img_convert/03812d061a40da193acf0cd88103b4f3.png)
+![alt text](image-36.png)
 
 #### 3.高响应比优先（HRRN，Highest Response Ratio Next）
 
-![image-20210805145558483](https://img-blog.csdnimg.cn/img_convert/3cbe3e59dbebeea7180c95b433760ae1.png)
+![alt text](image-37.png)
 
 #### 4.三种算法对比
 
-![image-20210805145752847](https://img-blog.csdnimg.cn/img_convert/103fb44c93582d302f963c1ce7548072.png)
+![alt text](image-38.png)
 
 注:这几种算法主要关心对用户的公平性、平均周转时间、平均等待时间等评价系统整体性能的指标，但是不关心“响应时间”，也并不区分任务的紧急程度，因此对于用户来说，交互性很糟糕。**因此这三种算法一般适合用于早期的批处理系统**，当然，FCFS算法也常结合其他的算法使用，在现在也扮演着很重要的角色。而适合用于交互式系统的调度算法将在下个小节介绍...
 
@@ -466,7 +458,7 @@ draft: false
 
 #### 1.时间片轮转调度（RR，Round-Robin）
 
-![image-20210805151053159](https://img-blog.csdnimg.cn/img_convert/8c9299024e9ae9d72d4ebcc47e46140d.png)
+![alt text](image-39.png)
 
 
 
@@ -476,19 +468,17 @@ draft: false
 
 #### 2.优先级调度算法
 
-![image-20210805152056532](https://img-blog.csdnimg.cn/img_convert/1ad11f390e65870ac70a17f5e5fa5a8d.png)
+![alt text](image-40.png)
 
-![image-20210805152129027](https://img-blog.csdnimg.cn/img_convert/2dc33f9d6b1f31efaaf475c97517e2aa.png)
+![alt text](image-41.png)
 
 #### 3.多级反馈队列调度算法
 
-
-
-![image-20210805152958697](https://img-blog.csdnimg.cn/img_convert/f7eca0fceaac9826bf70f59103187eca.png)
+![alt text](image-42.png)
 
 - 通过下边的例子来加深理解
 
-![image-20210805153054972](https://img-blog.csdnimg.cn/img_convert/9a867b7870c21907cb8384fdfd17d744.png)
+![alt text](image-43.png)
 
 #### 4.总结
 
@@ -500,7 +490,7 @@ draft: false
 
 - 通过进程通信——管道通信的例子来了解什么是进程同步。
 
-![image-20210805153649199](https://img-blog.csdnimg.cn/img_convert/ab782cbc2f93b0bd295915a8ad265113.png)
+![alt text](image-44.png)
 
 读进程和写进程并发地运行，由于并发必然导致异步性，因此“写数据”和“读数据”两个操作执行的先后顺序是不确定的。而实际应用中，又必须按照“写数据→读数据”的顺序来执行的。**如何解决这种异步问题，就是“进程同步”所讨论的内容。**
 
@@ -515,11 +505,11 @@ draft: false
 - 对临界资源的访问，必须互斥地进行。互斥，亦称间接制约关系。
 - **进程互斥指当一个进程访问某临界资源时，另一个想要访问该临界资源的进程必须等待。当前访问临界资源的进程访问结束，释放该资源之后，另一个进程才能去访问临界资源。**
 
-![image-20210805154317605](https://img-blog.csdnimg.cn/img_convert/a6e491f1593764945389020d3488ec2b.png)
+![alt text](image-45.png)
 
 对临界资源的互斥访问，可以在逻辑上分为如下四个部分:
 
-![image-20210805154539614](https://img-blog.csdnimg.cn/img_convert/fcc9ed820167671f745395456bd93c78.png)
+![alt text](image-46.png)
 
 
 
@@ -538,7 +528,7 @@ draft: false
 
 > 代码实现
 
-![image-20210805155502678](https://img-blog.csdnimg.cn/img_convert/ca8d3bd22ad27e78f6a089f652f2a818.png)
+![alt text](image-47.png)
 
 > 解释
 
@@ -555,20 +545,20 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 算法思想:设置一个布尔型数组flag[]，数组中各个元素用来标记各进程想进入临界区的意愿，比如“flag[0] =ture”意味着0号进程 P0现在想要进入临界区。每个进程在进入临界区之前先检查当前有没有别的进程想进入临界区，如果没有，则把自身对应的标志flag[li]设为true，之后开始访问临界区。
 
-![image-20210805160140406](https://img-blog.csdnimg.cn/img_convert/0e91becb0fdb10f94f2b8fca3f0efbba.png)
+![alt text](image-48.png)
 
 若按照①⑤②⑥③⑦....的顺序执行，P0和P1将会同时访问临界区。因此，**双标志先检查法的主要问题是:违反“忙则等待”原则。**
 原因在于，进入区的“检查”和“上锁”两个处理不是一气呵成的。“检查”后，“上锁”前可能发生进程切换。
 
 #### 3.双标志后检查法
 
-![image-20210805160459552](https://img-blog.csdnimg.cn/img_convert/e7244375b3afd7f547061b9d5d8460fd.png)
+![alt text](image-49.png)
 
 #### 4.Peterson算法
 
 算法思想:双标志后检查法中，两个进程都争着想进入临界区，但是谁也不让谁，最后谁都无法进入临界区。Gary L.Peterson想到了一种方法，**如果双方都争着想进入临界区，那可以让进程尝试“孔融让梨”，主动让对方先使用临界区。**
 
-![image-20210805161159117](https://img-blog.csdnimg.cn/img_convert/9e38525505d28fd8c7d5be7965292a90.png)
+![alt text](image-50.png)
 
 - Peterson算法用软件方法解决了**进程互斥问题，遵循了空闲让进、忙则等待、有限等待**三个原则，但是依然未遵循让权等待的原则。
 - Peterson算法相较于之前三种软件解决方案来说，是最好的，但依然不够好。
@@ -577,25 +567,25 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 #### 1.中断屏蔽方法
 
-![image-20210805163248064](https://img-blog.csdnimg.cn/img_convert/43cb79615ff03f08e55e1135c9965333.png)
+![alt text](image-51.png)
 
 #### 2.TestAndSet指令
 
-![image-20210805163700544](https://img-blog.csdnimg.cn/img_convert/1ecf20d2bfc8482acd0186d3718004a9.png)
+![alt text](image-52.png)
 
 #### 3.Swap指令
 
-![image-20210805163905058](https://img-blog.csdnimg.cn/img_convert/449b870fd8f5c9073aec9ad0c0330262.png)
+![alt text](image-53.png)
 
 ### 15.信号量机制
 
 #### 1.什么是信号量
 
 - 用户进程可以通过使用操作系统提供的**一对原语**来对信号量进行操作，从而很方便的实现了进程互斥、进程同步。
-- **信号量其实就是一个变量（可以是一个整数，也可以是更复杂的记录型变量)，**可以用一个信号量来表示系统中某种资源的数量，比如:系统中只有一台打印机，就可以设置一个初值为1的信号量。
+- **信号量其实就是一个变量（可以是一个整数，也可以是更复杂的记录型变量），**可以用一个信号量来表示系统中某种资源的数量，比如:系统中只有一台打印机，就可以设置一个初值为1的信号量。
 - 原语是一种特殊的程序段，其执行只能一气呵成，不可被中断。原语是由关中断/开中断指令实现的。
 - 一对原语: wait(S)原语和 signal(S)原语，可以把原语理解为我们自己写的函数，函数名分别为 wait和 signal，括号里的信号量s其实就是函数调用时传入的一个参数。
-- wait、signal原语常简称为P、V操作（来自荷兰语proberen和 verhogen)。因此，做题的时候常把wait(S)、 signal(S)两个操作分别写为P(S)、V\(S)。
+- wait、signal原语常简称为P、V操作（来自荷兰语proberen和 verhogen）。因此，做题的时候常把wait(S)、 signal(S)两个操作分别写为P(S)、V\(S)。
 
 #### 2.整型信号量
 
@@ -605,13 +595,13 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 下面以打印机为例：
 
-![image-20210806131030861](https://img-blog.csdnimg.cn/img_convert/d3e9ed36c7bac31fc1dbf78aa751e000.png)
+![alt text](image-54.png)
 
 #### 3.记录型信号量
 
 整型信号量的缺陷是存在“忙等”问题，因此人们又提出了“记录型信号量”，即用**记录型数据结构表示的信号量**。
 
-![image-20210806131433220](https://img-blog.csdnimg.cn/img_convert/f694412f66de5efcbd4d4f4a9db4b041.png)
+![alt text](image-55.png)
 
 
 
@@ -619,12 +609,12 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 #### 1.信号量机制实现进程互斥
 
-1. 分析并发进程的关键活动，划定临界区（如:对临界资源打印机的访问就应放在临界区)
+1. 分析并发进程的关键活动，划定临界区（如:对临界资源打印机的访问就应放在临界区）
 2. 设置互斥信号量mutex，初值为1
 3. 在临界区之前执行P(mutex)
 4. 在临界区之后执行V(mutex)
 
-![image-20210806132725957](https://img-blog.csdnimg.cn/img_convert/87e5c5164591e6b5934f832272f201ab.png)
+![alt text](image-56.png)
 
 注意： 对不同的临界资源（如摄像头，打印机）需要设置不同的互斥信号量。
 
@@ -636,26 +626,26 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 那么如何实现呢？
 
-1. 分析什么地方需要实现“同步关系”，即必须保证“一前一后”执行的两个操作（或两句代码)
+1. 分析什么地方需要实现“同步关系”，即必须保证“一前一后”执行的两个操作（或两句代码）
 2. 设置同步信号量s,初始为0
 3. 在“前操作”之后执行v(S)
 4. 在“后操作”之前执行P(S)
 
 下面通过一个例子来解释，要求：进程2的代码4必须在进程1的代码2之后执行。
 
-![image-20210806133559929](https://img-blog.csdnimg.cn/img_convert/081e617577b927356337cc0e9fd189d4.png)
+![alt text](image-57.png)
 
 #### 3.信号量机制实现前驱关系
 
 进程P1中有句代码S1，P2中有句代码S2 ...P... P6中有句代码S6。这些代码要求按如下前驱图所示的顺序来执行:
-其实每一对前驱关系都是一个进程同步问题（需要保证一前一后的操作)，因此，
+其实每一对前驱关系都是一个进程同步问题（需要保证一前一后的操作），因此，
 1．要为每一对前驱关系各设置一个同步变量
 
 2．在“前操作”之后对相应的同步变量执行V操作
 
 3.在“后操作”之前对相应的同步变量执行Р操作
 
-![image-20210806133958251](https://img-blog.csdnimg.cn/img_convert/ee8027dccb57609b12bd84bb7163a7be.png)
+![alt text](image-58.png)
 
 
 
@@ -670,23 +660,23 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 - 只有缓冲区不空时，消费者才能从中取出产品，否则必须等待。
 - 缓冲区是临界资源，各进程必须互斥地访问。
 
-![image-20210806134848101](https://img-blog.csdnimg.cn/img_convert/772d66766aaa0182f31b1558d9cc18c1.png)
+![alt text](image-59.png)
 
 
 
 #### 2.问题分析
 
-![image-20210806134953024](https://img-blog.csdnimg.cn/img_convert/6dd4f6b27a8d9f02c97a790519dc7a83.png)
+![alt text](image-60.png)
 
 #### 3.如何实现
 
-![image-20210806135800310](https://img-blog.csdnimg.cn/img_convert/f48264b874b5a5198ddd6796e26bd415.png)
+![alt text](image-61.png)
 
 
 
 #### 4.能够改变相邻P，V的顺序
 
-![image-20210806135911104](https://img-blog.csdnimg.cn/img_convert/d1a0a5110093ccfe6d8cba675f23907e.png)
+![alt text](image-62.png)
 
 ### 18.多生产者——多消费者
 
@@ -694,11 +684,11 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 桌子上有一只盘子，每次只能向其中放入一个水果。爸爸专向盘子中放苹果，妈妈专向盘子中放橘子，儿子专等着吃盘子中的橘子，女儿专等着吃盘子中的苹果。只有盘子空时，爸爸或妈妈才可向盘子中放一个水果。仅当盘子中有自己需要的水果时，儿子或女儿可以从盘子中取出水果。用PV操作实现上述过程。
 
-![image-20210806140946552](https://img-blog.csdnimg.cn/img_convert/f310ca95c670b6f61db93333e070134a.png)
+![alt text](image-63.png)
 
 #### 2.如何实现
 
-![image-20210806141024230](https://img-blog.csdnimg.cn/img_convert/4ac991dd36cb6f27f554522a4cc5f8f9.png)
+![alt text](image-64.png)
 
 问题：可不可以不使用问题信号量？
 
@@ -719,11 +709,11 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 假设一个系统有三个抽烟者进程和一个供应者进程。每个抽烟者不停地卷烟并抽掉它，但是要卷起并抽掉一支烟，抽烟者需要有三种材料:烟草、纸和胶水。三个抽烟者中，第一个拥有烟草、第二个拥有纸、第三个拥有胶水。供应者进程无限地提供三种材料，供应者每次将两种材料放桌子上，拥有剩下那种材料的抽烟者卷一根烟并抽掉它，并给供应者进程一个信号告诉完成了，供应者就会放另外两种材料再桌上，这个过程一直重复(让三个抽烟者轮流地抽烟)。
 
-![image-20210807131831561](https://img-blog.csdnimg.cn/img_convert/6725edf55ad6a75ccbb8373c947733f2.png)
+![alt text](image-65.png)
 
 #### 2.如何解决
 
-![image-20210807131924674](https://img-blog.csdnimg.cn/img_convert/aa825efe6a5b9ccb9544b2d5c59d6599.png)
+![alt text](image-66.png)
 
 ### 20.读者——写者问题
 
@@ -739,15 +729,15 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 ④写者执行写操作前，应让已有的读者和写者全部退出。
 
-![image-20210807133416464](https://img-blog.csdnimg.cn/img_convert/177ebb9d437f0a037bb81df8faf39a04.png)
+![alt text](image-67.png)
 
 #### 2.如何实现
 
-![image-20210807133502764](https://img-blog.csdnimg.cn/img_convert/20eb775044267cfb7ef9926fb41d6104.png)
+![alt text](image-68.png)
 
 - 潜在的问题：只要读进程还在读，写进程就要一直堵塞等待，可能会饿死。因此在这种算法中，读进程优先。下面来实现“ 先来先服务”算法，这样就不会导致写进程饿死。
 
-![image-20210807133533828](https://img-blog.csdnimg.cn/img_convert/4e603a19e928c08bf3caf6eee68ef233.png)
+![alt text](image-69.png)
 
 #### 3.总结
 
@@ -760,9 +750,9 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 #### 1.问题描述
 
-一张圆桌上坐着5名哲学家，每两个哲学家之间的桌上摆一根筷子，桌子的中间是一碗米饭。哲学家们倾注毕生的精力用于思考和进餐，哲学家在思考时，并不影响他人。只有当哲学家饥饿时，才试图拿起左、右两根筷子（一根一根地拿起)。如果筷子已在他人手上，则需等待。饥饿的哲学家只有同时拿起两根筷子才可以开始进餐，当进餐完毕后，放下筷子继续思考。
+一张圆桌上坐着5名哲学家，每两个哲学家之间的桌上摆一根筷子，桌子的中间是一碗米饭。哲学家们倾注毕生的精力用于思考和进餐，哲学家在思考时，并不影响他人。只有当哲学家饥饿时，才试图拿起左、右两根筷子（一根一根地拿起）。如果筷子已在他人手上，则需等待。饥饿的哲学家只有同时拿起两根筷子才可以开始进餐，当进餐完毕后，放下筷子继续思考。
 
-![image-20210807134907136](https://img-blog.csdnimg.cn/img_convert/360ff5d3aeb35f194be861f686519311.png)
+![alt text](image-70.png)
 
 #### 2.问题分析
 
@@ -775,7 +765,7 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 - 如果使用下图所示的方法，则会导致死锁问题。
 
-![image-20210807135145340](https://img-blog.csdnimg.cn/img_convert/725536caf67af3d7caa18e9ce79305be.png)
+![alt text](image-71.png)
 
 - 那么如何解决呢？
 
@@ -787,7 +777,7 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 下面用代码实现第三种方式。
 
-![image-20210807135344301](https://img-blog.csdnimg.cn/img_convert/b0977fc37a695dcf08f2bb2ff1b77f9d.png)
+![alt text](image-72.png)
 
 ### 22.管程
 
@@ -819,7 +809,7 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 #### 3.java中类似于管程的机制（单例模式）
 
-![image-20210807141404776](https://img-blog.csdnimg.cn/img_convert/ae7939e60bc5b80ee6ba3e825b5cba77.png)
+![alt text](image-73.png)
 
 ### 23.死锁
 
@@ -835,7 +825,7 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 - 饥饿:由于长期得不到想要的资源，某进程无法向前推进的现象。比如:在短进程优先（SPF）算法中，若有源源不断的短进程到来，则长进程将一直得不到处理机，从而发生长进程“饥饿”。
 - 死循环:某进程执行过程中一直跳不出某个循环的现象。有时是因为程序逻辑bug 导致的，有时是程序员故意设计的。
 
-![image-20210807142049088](https://img-blog.csdnimg.cn/img_convert/e6b26d2c084370559acda853d2d8c42e.png)
+![alt text](image-74.png)
 
 #### 3.死锁产生的必要条件
 
@@ -871,15 +861,15 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 ### 24.预防死锁
 
-![image-20210807144115187](https://img-blog.csdnimg.cn/img_convert/fb6587d81b2b63eda36043138bb6f0ca.png)
+![alt text](image-75.png)
 
 ### 25.避免死锁
 
 #### 11.什么是安全序列
 
-![image-20210807145513416](https://img-blog.csdnimg.cn/img_convert/75e60e10c3364d0e57206bc73035417b.png)
+![alt text](image-76.png)
 
-![image-20210807145554354](https://img-blog.csdnimg.cn/img_convert/38e23117bf18e59e503260594a952a93.png)
+![alt text](image-77.png)
 
 
 
@@ -887,7 +877,7 @@ turn表示当前允许进入临界区的进程号，而只有当前允许进入�
 
 - 所谓安全序列，就是指如果系统按照这种序列分配资源，则每个进程都能顺利完成。只要能找出一个安全序列，系统就是安全状态。当然，安全序列可能有多个。
 - 如果分配了资源之后，系统中找不出任何一个安全序列，系统就进入了不安全状态。这就意味着之后可能所有进程都无法顺利的执行下去。当然，如果有进程提前归还了一些资源，那系统也有可能重新回到安全状态，不过我们在分配资源之前总是要考虑到最坏的情况。
-- **如果系统处于安全状态，就一定不会发生死锁。如果系统进入不安全状态，则可能会发生死锁。（不安全状态未必就是发生了死锁，但发生死锁时一定是在不安全状态)**
+- **如果系统处于安全状态，就一定不会发生死锁。如果系统进入不安全状态，则可能会发生死锁。（不安全状态未必就是发生了死锁，但发生死锁时一定是在不安全状态）**
 - 因此可以在资源分配之前预先判断这次分配是否会导致系统进入不安全状态，以此决定是否答应资源分配请求。这也是“银行家算法”的核心思想。
 
 #### 2.银行家算法
@@ -925,10 +915,10 @@ Max - Allocation = Need矩阵表示各进程最多还需要多少资源
 ①用某种数据结构来保存资源的请求和分配信息;
 ②提供一种算法，利用上述信息来检测系统是否已进入死锁状态。
 
-![image-20210807151232864](https://img-blog.csdnimg.cn/img_convert/97dc902bcb246554f9de99acb1fb6fe1.png)
+![alt text](image-78.png)
 
 如果系统中剩余的可用资源数足够满足进程的需求，那么这个进程暂时是不会阻塞的，可以顺利地执行下去。如果这个进程执行结束了把资源归还系统，就可能使某些正在等待资源的进程被激活，并顺利地执行下去。相应的，这些被激活的进程执行完了之后又会归还一些资源，这样可能又会激活另外一些阻塞的进程.
-**如果按上述过程分析，最终能消除所有边，就称这个图是可完全简化的。此时一定没有发生死锁（相当于能找到一个安全序列)。**
+**如果按上述过程分析，最终能消除所有边，就称这个图是可完全简化的。此时一定没有发生死锁（相当于能找到一个安全序列）。**
 如果最终不能消除所有边，那么此时就是发生了死锁。
 
 **死锁定理:如果某时刻系统的资源分配图是不可完全简化的，那么此时系统死锁。**
@@ -959,7 +949,7 @@ Max - Allocation = Need矩阵表示各进程最多还需要多少资源
 
 **内存是用于存放数据的硬件。程序执行前需要先放到内存中才能被CPU处理。**
 
-![image-20210807162229945](https://img-blog.csdnimg.cn/img_convert/5151089654a429d7ba63d56994a1ebba.png)
+![alt text](image-79.png)
 
 > 相对地址和绝对地址
 
@@ -970,7 +960,7 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 > 写程序到程序运行
 
-![image-20210807162523347](https://img-blog.csdnimg.cn/img_convert/d86f101e631d897b3ac517264e448198.png)
+![alt text](image-80.png)
 
 ### 2.内存管理
 
@@ -980,7 +970,7 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 2. 操作系统需要提供某种技术从逻辑上对内存空间进行扩充。
 3. 操作系统需要提供地址转换功能，负责程序的逻辑地址与物理地址的转换
 
-![image-20210808144126553](https://img-blog.csdnimg.cn/img_convert/07a609df0fdec29ab43654773e37b5ab.png)
+![alt text](image-81.png)
 
 4. 操作系统需要提供内存保护功能。保证各进程在各自存储空间内运行，互不干扰
 
@@ -988,26 +978,26 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 方法一:在CPU中设置一对上、下限寄存器，存放进程的上、下限地址。进程的指令要访问某个地址时，CPU检查是否越界。
 
-![image-20210808144249365](https://img-blog.csdnimg.cn/img_convert/52b901e6ea188a24f8baad9d72b8cdbe.png)
+![alt text](image-82.png)
 
 方法二:采用重定位寄存器（又称基址寄存器）和界地址寄存器（又称限长寄存器）进行越界检查。重定位寄存器中存放的是进程的起始物理地址。界地址寄存器中存放的是进程的最大逻辑地址。
 
-![image-20210808144341286](https://img-blog.csdnimg.cn/img_convert/fd5a139a2c073fd55e9da9b70e93c423.png)
+![alt text](image-83.png)
 
 ### 3.覆盖和交换
 
-![image-20210808144501243](https://img-blog.csdnimg.cn/img_convert/8e4c90ff0a0fc6dc5be5db64e6627e22.png)
+![alt text](image-84.png)
 
 
 
 #### 1.覆盖技术
 
 覆盖技术的思想 : **将程序分为多个段（多个模块）**。常用的段常驻内存，不常用的段在需要时调入内存。
-内存中分为一个“固定区”和若干个“覆盖区”。需要常驻内存的段放在“固定区”中，调入后就不再调出（除非运行结束)不常用的段放在“覆盖区”，需要用到时调入内存，用不到时调出内存。
+内存中分为一个“固定区”和若干个“覆盖区”。需要常驻内存的段放在“固定区”中，调入后就不再调出（除非运行结束）不常用的段放在“覆盖区”，需要用到时调入内存，用不到时调出内存。
 
-![](https://img-blog.csdnimg.cn/img_convert/edd42b2c38af07a4a6021b4527f0efc0.png)
+![alt text](image-85.png)
 
-![image-20210808151012190](https://img-blog.csdnimg.cn/img_convert/edd42b2c38af07a4a6021b4527f0efc0.png)
+![alt text](image-86.png)
 
 必须由程序员声明覆盖结构，操作系统完成自动覆盖。**缺点:对用户不透明，增加了用户编程负担。**覆盖技术只用于早期的操作系统中，现在已成为历史。
 
@@ -1015,7 +1005,7 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 交换（对换）技术的设计思想: **内存空间紧张时，系统将内存中某些进程暂时换出外存，把外存中某些已具备运行条件的进程换入内存（进程在内存与磁盘间动态调度）**。之前讲的中级调度（内存调度）就是为这个服务的。
 
-![image-20210808151250246](https://img-blog.csdnimg.cn/img_convert/94f1d714b7b6c1f486a1d60150f5f4be.png)
+![alt text](image-87.png)
 
 1.应该在外存（磁盘）的什么位置保存被换出的进程?
 
@@ -1035,22 +1025,22 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 连续分配：指为用户进程分配的必须是一个连续的内存空间。
 
-![image-20210808151616403](https://img-blog.csdnimg.cn/img_convert/b2c1dc99b722bace451d4df89c041ec3.png)
+![alt text](image-88.png)
 
 #### 1.单一连续分配
 
 - 在单一连续分配方式中，内存被分为系统区和用户区。系统区通常位于内存的低地址部分，用于存放操作系统相关数据;用户区用于存放用户进程相关数据。
 - 内存中只能有一道用户程序，用户程序独占整个用户区空间。
-- 优点: 实现简单 ;无外部碎片;可以采用覆盖技术扩充内存;不一定需要采取内存保护（eg:早期的 PC操作系统MS-DOS)。
+- 优点: 实现简单 ;无外部碎片;可以采用覆盖技术扩充内存;不一定需要采取内存保护（eg:早期的 PC操作系统MS-DOS）。
 - 缺点:只能用于单用户、单任务的操作系统中;有内部碎片;存储器利用率极低。
 
-![image-20210808153202643](https://img-blog.csdnimg.cn/img_convert/f37af84459a5776ef29988ba7e63b5ac.png)
+![alt text](image-89.png)
 
 #### 2.固定分区分配
 
-![image-20210808153255068](https://img-blog.csdnimg.cn/img_convert/a5549d30aa3ec597fe0f0770b441d046.png)
+![alt text](image-90.png)
 
-![image-20210808153337606](https://img-blog.csdnimg.cn/img_convert/0b4097c2a3f3c66b33767dbf49546bfd.png)
+![alt text](image-91.png)
 
 #### 3.动态分区分配
 
@@ -1060,21 +1050,21 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 1. 系统要用什么样的数据结构记录内存的使用情况?
 
-![image-20210808153616151](https://img-blog.csdnimg.cn/img_convert/98605d272e0d2cc91de3982d9ca5a19f.png)
+![alt text](image-92.png)
 
 2. 当很多个空闲分区都能满足需求时,应该选择哪个分区进行分配?
 
-        使用动态分区算法，这个将在下一小节进行详细介绍。
+  使用动态分区算法，这个将在下一小节进行详细介绍。
 
 3. 如何进行分区的分配与回收操作?
 
 - 如何分配  -----------> 使用动态分区算法之后，修改数据结构即可。
 
-![image-20210808153849729](https://img-blog.csdnimg.cn/img_convert/f353febfbf73c2f3f8d924e9c1f96264.png)
+![alt text](image-93.png)
 
-- 如何回收-------------------------------> 牢记一点即可，会把相邻的空闲区域合并为一个。
+- 如何回收  -----------> 牢记一点即可，会把相邻的空闲区域合并为一个。
 
-![image-20210808154037814](https://img-blog.csdnimg.cn/img_convert/19cf34972627d3769c9d5e80e61314e7.png)
+![alt text](image-94.png)
 
 
 
@@ -1095,14 +1085,14 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 算法思想: 每次都从低地址开始查找，**找到第一个能满足大小的空闲分区**。
 如何实现:空闲分区以地址递增的次序排列。每次分配内存时顺序查找空闲分区链(或空闲分区表），找到大小能满足要求的第一个空闲分区。
 
-![image-20210808155515584](https://img-blog.csdnimg.cn/img_convert/161691d8e26c7ff7f58def19ce5c6b53.png)
+![alt text](image-95.png)
 
 #### 2.最佳适应算法
 
 算法思想:由于动态分区分配是一种连续分配方式，为各进程分配的空间必须是连续的一整片区域。因此为了保证当“大进程”到来时能有连续的大片空间，可以尽可能多地留下大片的空闲区，即，**优先使用更小的空闲区**。
 如何实现:空闲分区按容量递增次序链接。每次分配内存时顺序查找空闲分区链(或空闲分区表)，找到大小能满足要求的第一个空闲分区。
 
-![image-20210808155644448](https://img-blog.csdnimg.cn/img_convert/5bf66568b85d6d72094ce1e9afd34555.png)
+![alt text](image-96.png)
 
 
 
@@ -1112,18 +1102,18 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 算法思想:为了解决最佳适应算法的问题――即留下太多难以利用的小碎片，可以在**每次分配时优先使用最大的连续空闲区**，这样分配后剩余的空闲区就不会太小，更方便使用。
 如何实现:空闲分区按容量递减次序链接。每次分配内存时顺序查找空闲分区链(或空闲分区表），找到大小能满足要求的第一个空闲分区。
 
-![image-20210808155801357](https://img-blog.csdnimg.cn/img_convert/77ea246fc29d148c012ae77b7eeb2c4a.png)
+![alt text](image-97.png)
 
 #### 4.临近适应算法
 
 算法思想:首次适应算法每次都从链头开始查找的。这可能会导致低地址部分出现很多小的空闲分区，而每次分配查找时，都要经过这些分区，因此也增加了查找的开销。**如果每次都从上次查找结束的位置开始检索，就能解决上述问题。**
 如何实现:空闲分区以地址递增的顺序排列(可排成一个循环链表）。每次分配内存时从上次查找结束的位置开始查找空闲分区链（或空闲分区表），找到大小能满足要求的第一个空闲分区。
 
-![image-20210808160041410](https://img-blog.csdnimg.cn/img_convert/54634cd9bc916ca1e4e19d2a61300f75.png)
+![alt text](image-98.png)
 
 #### 5.四种算法对比
 
-![image-20210808160008902](https://img-blog.csdnimg.cn/img_convert/0e9e2f352aaf86e9b6eb84e4b94fe62f.png)
+![alt text](image-99.png)
 
 ### 6.基本分页存储管理
 
@@ -1131,7 +1121,7 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 非连续分配:为用户进程分配的可以是一些分散的内存空间。
 
-![image-20210808163001835](https://img-blog.csdnimg.cn/img_convert/0f4e93675ac646001a63d9f6ce517c34.png)
+![alt text](image-100.png)
 
 
 
@@ -1165,17 +1155,17 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
    页内偏移量=80 % 50 = 30
    1号页在内存中存放的起始位置450
 
-![image-20210808163353323](https://img-blog.csdnimg.cn/img_convert/af74511cebf32839b2cfd846e1b6da35.png)
+![alt text](image-101.png)
 
 思考: 如何知道该页号对应页面在内存中的起始地址?
 
 操作系统为每一个进程创建一个页表?
 
-![image-20210808163849055](https://img-blog.csdnimg.cn/img_convert/87a39f7c9df30d864141b888e9d690f9.png)
+![alt text](image-102.png)
 
 - 如何理解每个页表项的长度是相同的，页号是“隐含的”？
 
-![image-20210809132717571](https://img-blog.csdnimg.cn/img_convert/2f305a7358bd0ceef112786dfbcb948c.png)
+![alt text](image-103.png)
 
 ### 7.基本地址变换机构
 
@@ -1184,7 +1174,7 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 - 执行流程
 
-![image-20210809132912720](https://img-blog.csdnimg.cn/img_convert/96dba8e1d26bfce90588d95fa3d67093.png)
+![alt text](image-104.png)
 
 - 页表项长度，页表长度，页面大小
 
@@ -1194,7 +1184,7 @@ Eg: 编译时只需确定变量x存放的相对地址是100（也就是说相对
 
 Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共会被分为2^32/ 2^12=2^20个内存块，因此内存块号的范围应该是0~2^20 - 1。因此至少要20个二进制位才能表示这么多的内存块号，因此至少要3个字节才够(每个字节8个二进制位，3个字节共24个二进制位)。每个块号用三个字节来表示。
 
-![image-20210809133518059](https://img-blog.csdnimg.cn/img_convert/a32ce137c88c5004cc868d3ec65a1d94.png)
+![alt text](image-105.png)
 
 ### 8.具有快表的地址变换机构
 
@@ -1211,7 +1201,7 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 - 执行流程
 
-![image-20210809134807098](https://img-blog.csdnimg.cn/img_convert/77ffe868216a19436cb741628724760a.png)
+![alt text](image-106.png)
 
 ### 9.两级页表
 
@@ -1226,11 +1216,11 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 我们可以把页表放在不同的页框中，再用一个表来记录各个各个子页表所在位置，我们把这个表叫做页目录表（外层页表，顶级页表）。
 
-![image-20210809141121083](https://img-blog.csdnimg.cn/img_convert/ee7a1b90d78aeb48ba7df15070bc0625.png)
+![alt text](image-107.png)
 
 #### 2.解决问题二
 
-![image-20210809141302977](https://img-blog.csdnimg.cn/img_convert/c1ac36edcad8ed9f6bdb1f9955966772.png)
+![alt text](image-108.png)
 
 #### 3. 其他细节
 
@@ -1251,13 +1241,12 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 进程的地址空间:**按照程序自身的逻辑关系划分为若干个段**，每个段都有一个段名（在低级语言中，程序员使用段名来编程)，每段从0开始编址。
 内存分配规则 : 以段为单位进行分配，每个段在内存中占据连续空间，但各段之间可以不相邻。
 
-![image-20210809144740848](https://img-blog.csdnimg.cn/img_convert/0484baeb6ada8fd5aab483625ed40c94.png)
-
+![alt text](image-109.png)
 
 
 - 分段系统的逻辑地址结构由段号（段名）和段内地址（段内偏移量）所组成。
 
-![image-20210809144846609](https://img-blog.csdnimg.cn/img_convert/8647b91e9abb594953a6263b67542d96.png)
+![alt text](image-110.png)
 
 **段号的位数决定了每个进程最多可以分几个段。**
 
@@ -1265,11 +1254,11 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 #### 2.段表
 
-![image-20210809145109741](https://img-blog.csdnimg.cn/img_convert/e44ef24b52156fe644fc9d4dfeff3e15.png)
+![alt text](image-111.png)
 
 #### 3.段内寻址
 
-![image-20210809145221546](https://img-blog.csdnimg.cn/img_convert/dcfc379fc1eec971565205809465ed3b.png)
+![alt text](image-112.png)
 
 #### 4.分段，分页对比
 
@@ -1284,19 +1273,19 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 #### 1.分页，分段的优缺点
 
-![image-20210809150649428](https://img-blog.csdnimg.cn/img_convert/1313cc914e1a38bc5ae7292f2a376f7c.png)
+![alt text](image-113.png)
 
 
 
 既然两者都有优缺点，那么可不可以把他们结合起来呢？答案当然是可以的。如下图所示。
 
-![image-20210809150813503](https://img-blog.csdnimg.cn/img_convert/9b82b9db7d56adce8bb4be42d84b6859.png)
+![alt text](image-114.png)
 
 
 
 #### 2.段页式管理的逻辑结构
 
-![image-20210809150857246](https://img-blog.csdnimg.cn/img_convert/06426999bd3386b49cac332e1f3e2045.png)
+![alt text](image-115.png)
 
 段号的位数决定了每个进程最多可以分几个段
 
@@ -1306,7 +1295,7 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 #### 3.段内寻址
 
-![image-20210809151045913](https://img-blog.csdnimg.cn/img_convert/4cd303aceff43ce2ffcaa393b091b9df.png)
+![alt text](image-116.png)
 
 ### 12.虚拟内存
 
@@ -1315,7 +1304,7 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 - 一次性:作业必须一次性全部装入内存后才能开始运行。这会造成两个问题:①作业很大时，不能全部装入内存，导致大作业无法运行;②当大量作业要求运行时，由于内存无法容纳所有作业，因此只有少量作业能运行，导致多道程序并发度下降。
 - 驻留性:一旦作业被装入内存，就会一直驻留在内存中，直至作业运行结束。事实上，在一个时间段内，只需要访问作业的一小部分数据即可正常运行，这就导致了内存中会驻留大量的、暂时用不到的数据，浪费了宝贵的内存资源。
 
-![image-20210809152229610](https://img-blog.csdnimg.cn/img_convert/4afc02ebeca0040c34574d75ecb93861.png)
+![alt text](image-117.png)
 
 #### 2.虚拟内存的定义和特征
 
@@ -1344,7 +1333,7 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 **虚拟内存的实现需要建立在离散分配的内存管理方式基础上。**
 
-![image-20210809153046973](https://img-blog.csdnimg.cn/img_convert/b2797826b0323b52e4b1a07b1f89df7e.png)
+![alt text](image-118.png)
 
 ### 13.请求分页管理方式
 
@@ -1359,7 +1348,7 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 因此页表会增加四个字段来上面的信息。
 
-![image-20210809154307694](https://img-blog.csdnimg.cn/img_convert/2ecf5884ab1959d0b5c090cc57629ab8.png)
+![alt text](image-119.png)
 
 #### 2.缺页中断机制
 
@@ -1377,11 +1366,11 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 一条指令在执行期间，可能产生多次缺页中断。(如: copy AtoB，即将逻辑地址A中的数据复制到逻辑地址B，而A、B属于不同的页面，则有可能产生两次中断)
 
-![image-20210809154630244](https://img-blog.csdnimg.cn/img_convert/0a2f46ccc0da552d63b2dcdac3745099.png)
+![alt text](image-120.png)
 
 #### 3.地址变换
 
-![image-20210809154720385](https://img-blog.csdnimg.cn/img_convert/9920dd67a33a7aefb18540e58e8042c8.png)
+![alt text](image-121.png)
 
 
 
@@ -1405,7 +1394,7 @@ Eg:假设某系统物理内存大小为4GB，页面大小为4KB，内存总共�
 
 最佳置换算法可以保证最低的缺页率，但实际上，只有在进程执行的过程中才能知道接下来会访问到的是哪个页面。操作系统无法提前预判页面访问序列。因此，**最佳置换算法是无法实现的**。
 
-![image-20210809161659809](https://img-blog.csdnimg.cn/img_convert/20243797dc9f1c3bf67a6e1a8bee2721.png)
+![alt text](image-122.png)
 
 #### 2.先进先出置换算法
 
@@ -1417,7 +1406,7 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 **只有FIFO算法会产生Belady异常**。另外，FIFO算法虽然实现简单，但是该算法与进程实际运行时的规律不适应，因为先进入的页面也有可能最经常被访问。因此，**算法性能差。**
 
-![image-20210809161847953](https://img-blog.csdnimg.cn/img_convert/ddec656e73421061245bddb66da4550c.png)
+![alt text](image-123.png)
 
 #### 3.最近最久未使用算法
 
@@ -1425,7 +1414,7 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 实现方法:赋予每个页面对应的页表项中，用访问字段记录该页面自上次被访问以来所经历的时间t。当需要淘汰一个页面时，选择现有页面中t值最大的，即最近最久未使用的页面。
 
-![image-20210809162117351](https://img-blog.csdnimg.cn/img_convert/dd607f957cd695304dc9422d84d5c66d.png)
+![alt text](image-124.png)
 
 #### 4.时钟置换算法
 
@@ -1433,9 +1422,9 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 时钟置换算法是一种性能和开销较均衡的算法，又称CLOCK算法，或最近未用算法(NRU，NotRecently Used)
 
-简单的CLOCK 算法实现方法:为每个页面设置一个访问位，再将内存中的页面都通过链接指针链接成一个循环队列。当某页被访问时，其访问位置为1。当需要淘汰一个页面时，只需检查页的访问位。如果是0，就选择该页换出;如果是1，则将它置为0，暂不换出，继续检查下一个页面，若第一轮扫描中所有页面都是1，则将这些页面的访问位依次置为0后，再进行第二轮扫描（第二轮扫描中一定会有访问位为0的页面，**因此简单的CLOCK算法选择一个淘汰页面最多会经过两轮扫描)**
+简单的CLOCK 算法实现方法:为每个页面设置一个访问位，再将内存中的页面都通过链接指针链接成一个循环队列。当某页被访问时，其访问位置为1。当需要淘汰一个页面时，只需检查页的访问位。如果是0，就选择该页换出;如果是1，则将它置为0，暂不换出，继续检查下一个页面，若第一轮扫描中所有页面都是1，则将这些页面的访问位依次置为0后，再进行第二轮扫描（第二轮扫描中一定会有访问位为0的页面，**因此简单的CLOCK算法选择一个淘汰页面最多会经过两轮扫描）**
 
-![image-20210809162337421](https://img-blog.csdnimg.cn/img_convert/0c6a83cab0e240d3ae2ea189b149f868.png)
+![alt text](image-125.png)
 
 #### 5.改进型的时钟置换算法
 
@@ -1450,11 +1439,11 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 第四轮:若第三轮扫描失败，则重新扫描，查找第一个（0，1）的帧用于替换。
 由于第二轮已将所有帧的访问位设为0，因此经过第三轮、第四轮扫描一定会有一个帧被选中，因此**改进型CLOCK置换算法选择一个淘汰页面最多会进行四轮扫描**
 
-![image-20210809162555604](https://img-blog.csdnimg.cn/img_convert/a601016bafd5e28fad0c3a920ef8f618.png)
+![alt text](image-126.png)
 
 #### 6.五种算法对比
 
-![image-20210809162647669](https://img-blog.csdnimg.cn/img_convert/10cf20937acd90e5e521376e1f7a15ac.png)
+![alt text](image-127.png)
 
 ### 15.页面分配策略
 
@@ -1476,7 +1465,7 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 全局置换:可以将操作系统保留的空闲物理块分配给缺页进程，也可以将别的进程持有的物理块置换到外存，再分配给缺页进程。
 
-![image-20210809164303593](https://img-blog.csdnimg.cn/img_convert/47b2b1f4af5a606cd9c2a947270d322b.png)
+![alt text](image-128.png)
 
 下面来分别介绍这几种方式。
 
@@ -1498,15 +1487,15 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 1. 系统拥有足够的对换区空间:页面的调入、调出都是在内存与对换区之间进行，这样可以保证页面的调入、调出速度很快。在进程运行前，需将进程相关的数据从文件区复制到对换区。
 
-![image-20210809165455533](https://img-blog.csdnimg.cn/img_convert/d57fdf9f7db93b3ae3790b3846367b29.png)
+![alt text](image-129.png)
 
 2. 系统缺少足够的对换区空间:凡是不会被修改的数据都直接从文件区调入，由于这些页面不会被修改，因此换出时不必写回磁盘，下次需要时再从文件区调入即可。对于可能被修改的部分，换出时需写回磁盘对换区，下次需要时再从对换区调入。
 
-![image-20210809165517173](https://img-blog.csdnimg.cn/img_convert/ce0ac4f20a08b61518dbcc45b78b7599.png)
+![alt text](image-130.png)
 
 3. UNIX方式:运行之前进程有关的数据全部放在文件区，故未使用过的页面，都可从文件区调入。若被使用过的页面需要换出，则写回对换区，下次需要时从对换区调入。
 
-![image-20210809165535864](https://img-blog.csdnimg.cn/img_convert/99bf3270b91f33c4f070cf24d6da60ff.png)
+![alt text](image-131.png)
 
 #### 4.抖动（颠簸）现象，工作集
 
@@ -1522,7 +1511,7 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 一般来说，驻留集大小不能小于工作集大小，否则进程运行过程中将频繁缺页。
 
-![image-20210809165818657](https://img-blog.csdnimg.cn/img_convert/9b2abc20a7a0141d0bfab172b93782d5.png)
+![alt text](image-132.png)
 
 ## 4.文件系统
 
@@ -1533,33 +1522,32 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
   1. 文件名:由创建文件的用户决定文件名，主要是为了方便用户找到文件，同一目录下不允许有重名文件。
   2. 标识符:一个系统内的各文件标识符唯一，对用户来说毫无可读性，因此标识符只是操作系统用于区分各个文件的一种内部名称。
   3. 类型:指明文件的类型
-  4. 位置:文件存放的路径（让用户使用)、在外存中的地址(操作系统使用，对用户不可见)
+  4. 位置:文件存放的路径（让用户使用）、在外存中的地址(操作系统使用，对用户不可见)
   5. 大小:指明文件大小创建时间、上次修改时间文件所有者信息
   6. 保护信息:对文件进行保护的访问控制信息
 
 - 文件分为有结构文件和无结构文件。
 
-![image-20210810142605554](https://img-blog.csdnimg.cn/img_convert/5c0ebd6dd5cacb9801719b98bcf70850.png)
-
+![alt text](image-133.png)
 
 
 - 操作系统向上（用户和应用程序）提供的功能
 
-![image-20210810142721956](https://img-blog.csdnimg.cn/img_convert/914c3a4bb38a17995adb6db607593dcd.png)
+![alt text](image-134.png)
 
 ### 2.文件的逻辑结构
 
-![image-20210810144248520](https://img-blog.csdnimg.cn/img_convert/348809239c946d13944d59f2339305ce.png)
+![alt text](image-135.png)
 
 按文件是否有结构分类，可以分为无结构文件、有结构文件两种。
 
 无结构文件:文件内部的数据就是一系列二进制流或字符流组成。又称“流式文件”。如:Windows操作系统中的.txt文件。
 
-有结构文件:由一组相似的记录组成，又称“记录式文件”。每条记录又若干个数据项组成。如:数据库表文件。一般来说，每条记录有一个数据项可作为关键字（作为识别不同记录的ID)
+有结构文件:由一组相似的记录组成，又称“记录式文件”。每条记录又若干个数据项组成。如:数据库表文件。一般来说，每条记录有一个数据项可作为关键字（作为识别不同记录的ID）
 
 我们主要研究有结构文件。
 
-![image-20210810144515415](https://img-blog.csdnimg.cn/img_convert/0b19abd7adcc698dbcaa240c5905f272.png)
+![alt text](image-136.png)
 
 #### 1.顺序文件
 
@@ -1567,13 +1555,13 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 顺序存储又可以分为串结构和顺序结构。
 
-![image-20210810144803262](https://img-blog.csdnimg.cn/img_convert/442c25a2230e519a015eb644375e3c77.png)
+![alt text](image-137.png)
 
 
 
 那么这几种存储方式可以快速找到第i个记录对应的地址呢？
 
-![image-20210810145032903](https://img-blog.csdnimg.cn/img_convert/8e34230949612ec31dbfbe27be7e6ba5.png)
+![alt text](image-138.png)
 
 
 
@@ -1585,7 +1573,7 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 这时我们可以建立一张索引表来快速找到第i个记录。如图所示：
 
-![image-20210810145421034](https://img-blog.csdnimg.cn/img_convert/0ed08cb468263930fb8ce29d870f9d1a.png)
+![alt text](image-139.png)
 
 **索引表本身是定长记录的顺序文件。**因此可以快速找到第i个记录对应的索引项。
 
@@ -1607,7 +1595,7 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 在本例中，学生记录按照学生姓名的开头字母进行分组。每个分组就是一个顺序文件，分组内的记录不需要按关键字排序。
 
-![image-20210810145653881](https://img-blog.csdnimg.cn/img_convert/1f6bc1e1774b9f5c4387ef54e3b6983f.png)
+![alt text](image-140.png)
 
 #### 4.多级索引顺序文件
 
@@ -1615,43 +1603,43 @@ Belady异常―一当为进程分配的物理块数增大时，缺页次数不�
 
 例如，对于一个含10^6个记录的文件，可先为该文件建立一张低级索引表，每100个记录为一组，故低级索引表中共有10000个表项(即10000个定长记录)，再把这10000个定长记录分组，每组100个，为其建立顶级索引表，故顶级索引表中共有100个表项。
 
-![image-20210810145950405](https://img-blog.csdnimg.cn/img_convert/c57391f7d0fd8cb6fe66d30df8060bdd.png)
+![alt text](image-141.png)
 
 ### 3.文件目录
 
-![image-20210810151340203](https://img-blog.csdnimg.cn/img_convert/53120cd1e8d7e5ffa75a3785d838aad7.png)
+![alt text](image-142.png)
 
 - 目录本身就是一种有结构文件，由一条条记录组成。每条记录对应一个在该放在该目录下的文件。如图所示
 
-![image-20210810151448625](https://img-blog.csdnimg.cn/img_convert/455ae681993634c26745abb4a5ef3877.png)
+![alt text](image-143.png)
 
 #### 1.文件控制块（FCB）
 
-- 目录文件中的一条记录就是一个“文件控制块（FCB)
+- 目录文件中的一条记录就是一个“文件控制块（FCB）
 
 FCB的有序集合称为“文件目录”，一个FCB就是一个文件目录项。
 
-FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构、物理结构等），存取控制信息（是否可读/可写、禁止访问的用户名单等)，使用信息（如文件的建立时间、修改时间等）。
+FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构、物理结构等），存取控制信息（是否可读/可写、禁止访问的用户名单等），使用信息（如文件的建立时间、修改时间等）。
 
 最重要，最基本的还是文件名、文件存放的物理地址。
 
 #### 2.单级目录结构
 
-![image-20210810151856934](https://img-blog.csdnimg.cn/img_convert/6916bba80959bfb9bd318ea0fae93071.png)
+![alt text](image-144.png)
 
 #### 3.二级目录结构
 
-![image-20210810151925508](https://img-blog.csdnimg.cn/img_convert/24461e7a115feda74dfd5a328857af71.png)
+![alt text](image-145.png)
 
 #### 4.多级目录结构（树形目录结构）
 
-![image-20210810152024749](https://img-blog.csdnimg.cn/img_convert/09b5390d37938510db4ce5d774398940.png)
+![alt text](image-146.png)
 
 树形目录结构可以很方便地对文件进行分类，层次结构清晰，也能够更有效地进行文件的管理和保护。但是，树形结构不便于实现文件的共享。为此，提出了“无环图目录结构”。
 
 #### 5.无环图目录结构
 
-![image-20210810152149951](https://img-blog.csdnimg.cn/img_convert/6460c75fa54a21687994959945c75e6d.png)
+![alt text](image-147.png)
 
 可以用不同的文件名指向同一个文件，甚至可以指向同一个目录(共享同一目录下的所有内容）。
 
@@ -1663,7 +1651,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 #### 6.索引结点（对FCB的改进）
 
-![image-20210810152356089](https://img-blog.csdnimg.cn/img_convert/c37cb7773063eb6a3e639f5106d9734b.png)
+![alt text](image-148.png)
 
 当找到文件名对应的目录项时，才需要将索引结点调入内存，索引结点中记录了文件的各种信息，包括文件在外存中的存放位置，根据“存放位置”即可找到文件。
 
@@ -1671,7 +1659,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 ### 4.文件分配方式（文件物理结构）
 
-![image-20210810160612269](https://img-blog.csdnimg.cn/img_convert/254ba278ff55f9d078c5833f2d19e1ed.png)
+![alt text](image-149.png)
 
 在介绍这些分配方式之前，先介绍一下什么是文件块，磁盘块。
 
@@ -1683,7 +1671,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 **用户通过逻辑地址来操作自己的文件，操作系统要负责实现从逻辑地址到物理地址的映射。**
 
-![image-20210810160801866](https://img-blog.csdnimg.cn/img_convert/2e337392fe6b347faf9b8c052b6f8203.png)
+![alt text](image-150.png)
 
 #### 1.连续分配
 
@@ -1693,13 +1681,13 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 **物理块号=起始块号＋逻辑块号**
 
-当然，还需要检查用户提供的逻辑块号是否合法（逻辑块号≥长度就不合法)、
+当然，还需要检查用户提供的逻辑块号是否合法（逻辑块号≥长度就不合法）
 
-优点:支持顺序访问和直接访问（即随机访问)；连续分配的文件在顺序访问时速度最快
+优点:支持顺序访问和直接访问（即随机访问——）；连续分配的文件在顺序访问时速度最快
 
 缺点:不方便文件拓展;存储空间利用率低，会产生磁盘碎片
 
-![image-20210810161040710](https://img-blog.csdnimg.cn/img_convert/d6919ae11bb4e125b3f0e6d81f80c7c9.png)
+![alt text](image-151.png)
 
 #### 2.链接分配——隐式链接
 
@@ -1715,13 +1703,13 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 结论:采用链式分配（隐式链接）方式的文件，只支持顺序访问，不支持随机访问，查找效率低。另外，指向下一个盘块的指针也需要耗费少量的存储空间。
 
-![image-20210810161314939](https://img-blog.csdnimg.cn/img_convert/78021e0d2ec00fecab38cb0fe87d71f8.png)
+![alt text](image-152.png)
 
 
 
 #### 3.链接分配——显式链接
 
-把用于链接文件各物理块的指针显式地存放在一张表中。即文件分配表（FAT，File Allocation Table)。如图所示
+把用于链接文件各物理块的指针显式地存放在一张表中。即文件分配表（FAT，File Allocation Table）。如图所示
 
 注意:一个磁盘仅设置一张FAT。开机时，将FAT读入内存，并常驻内存。FAT的各个表项在物理上连续存储，且每一个表项长度相同，因此“物理块号”字段可以是隐含的。
 
@@ -1735,7 +1723,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 显然，显式链接也不会产生外部碎片，也可以很方便地对文件进行拓展。
 
-![image-20210810161613102](https://img-blog.csdnimg.cn/img_convert/01d002c1a099e83f3981fceb95e89dce.png)
+![alt text](image-153.png)
 
 #### 4.两种链接分配方式总结
 
@@ -1751,11 +1739,11 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 #### 5.索引分配
 
-索引分配允许文件离散地分配在各个磁盘块中，**系统会为每个文件建立一张索引表**，索引表中记录了文件的各个逻辑块对应的物理块（索引表的功能类似于内存管理中的页表――建立逻辑页面到物理页之间的映射关系)。**索引表存放的磁盘块称为索引块。文件数据存放的磁盘块称为数据块。**
+索引分配允许文件离散地分配在各个磁盘块中，**系统会为每个文件建立一张索引表**，索引表中记录了文件的各个逻辑块对应的物理块（索引表的功能类似于内存管理中的页表――建立逻辑页面到物理页之间的映射关系）。**索引表存放的磁盘块称为索引块。文件数据存放的磁盘块称为数据块。**
 
 - 从逻辑块号到物理块号的转变
 
-用户给出要访问的逻辑块号i，操作系统找到该文件对应的目录项（FCB)
+用户给出要访问的逻辑块号i，操作系统找到该文件对应的目录项（FCB）
 
 从目录项中可知索引表存放位置，将索引表从外存读入内存，并查找索引表即可知道i号逻辑块在外存中的存放位置。
 
@@ -1763,7 +1751,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 但是索引表需要占用一定的存储空间
 
-![image-20210810162255818](https://img-blog.csdnimg.cn/img_convert/27c2d5bff551562e2c981f36b44f677f.png)
+![alt text](image-154.png)
 
 - 如果一个文件的索引表太大，一个磁盘块放不下，那么如何解决呢？
 
@@ -1771,15 +1759,15 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 ①链接方案:如果索引表太大，一个索引块装不下，那么可以将多个索引块链接起来存放。
 
-![image-20210810162649614](https://img-blog.csdnimg.cn/img_convert/25b3f3f2f52c118046dc13d067320719.png)
+![alt text](image-155.png)
 
-②多层索引:建立多层索引（原理类似于多级页表)。使第一层索引块指向第二层的索引块。还可根据文件大小的要求再建立第三层、第四层索引块。
+②多层索引:建立多层索引（原理类似于多级页表）。使第一层索引块指向第二层的索引块。还可根据文件大小的要求再建立第三层、第四层索引块。
 
-![image-20210810162724018](https://img-blog.csdnimg.cn/img_convert/d5527ab48037c33ea4b86291fef38692.png)
+![alt text](image-156.png)
 
-③混合索引:多种索引分配方式的结合。例如，一个文件的顶级索引表中，既包含直接地址索引（直接指向数据块），又包含一级间接索引（指向单层索引表)、还包含两级间接索引（指向两层索引表)。
+③混合索引:多种索引分配方式的结合。例如，一个文件的顶级索引表中，既包含直接地址索引（直接指向数据块），又包含一级间接索引（指向单层索引表）、还包含两级间接索引（指向两层索引表）。
 
-![image-20210810162801596](https://img-blog.csdnimg.cn/img_convert/29c46f644f01928a558baa7390cff6ff.png)
+![alt text](image-157.png)
 
 > 总结
 
@@ -1791,17 +1779,17 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 #### 6.三种分配方式总结
 
-![image-20210810163334462](https://img-blog.csdnimg.cn/img_convert/a935e9d61703ac76486ce85fff02032c.png)
+![alt text](image-158.png)
 
 ### 5.对空闲磁盘块的管理（文件存储空间管理）
 
-![image-20210810165416231](https://img-blog.csdnimg.cn/img_convert/65d8f4e50b9f5ee8319a406ae5bd9399.png)
+![alt text](image-159.png)
 
 #### 1.文件卷
 
 存储空间的划分:将物理磁盘划分为一个个文件卷(逻辑卷、逻辑盘)。所谓的文件卷就相当于电脑上的C盘，D盘等。
 
-![image-20210810165312412](https://img-blog.csdnimg.cn/img_convert/9190ef1cc05c0bc46256935a1505c2ef.png)
+![alt text](image-160.png)
 
 #### 2.空闲表法
 
@@ -1811,13 +1799,12 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 
 如何回收磁盘块:与内存管理中的动态分区分配很类似，当回收某个存储区时需要有四种情况―—①回收区的前后都没有相邻空闲区;②回收区的前后都是空闲区;③回收区前面是空闲区;④回收区后面是空闲区。总之，回收时需要注意表项的合并问题。
 
-![image-20210810165513344](https://img-blog.csdnimg.cn/img_convert/23f116036ca8eb3fb7b85496ef93769b.png)
-
+![alt text](image-161.png)
 #### 3.空闲链表法
 
 空闲链表发分为空闲盘块链和空闲盘区链。
 
-![image-20210810165802397](https://img-blog.csdnimg.cn/img_convert/b77bd000a1f9e5ee32f2373a8c5ac6c4.png)
+![alt text](image-162.png)
 
 ##### 1.空闲盘块链
 
@@ -1826,7 +1813,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 - 如何回收:回收的盘块依次挂到链尾，并修改空闲链的链尾指针。
 - 适用于离散分配的物理结构。为文件分配多个盘块时可能要重复多次操作。
 
-![image-20210810170003033](https://img-blog.csdnimg.cn/img_convert/7292df03815fd9209ca5e8595b19d9c4.png)
+![alt text](image-163.png)
 
 ##### 2.空闲盘区链
 
@@ -1835,7 +1822,7 @@ FCB中包含了文件的基本信息（文件名、物理地址、逻辑结构�
 - 如何回收:若回收区和某个空闲盘区相邻，则需要将回收区合并到空闲盘区中。若回收区没有和任何空闲区相邻，将回收区作为单独的一个空闲盘区挂到链尾。
 - 离散分配、连续分配都适用。为一个文件分配多个盘块时效率更高
 
-![image-20210810170223448](https://img-blog.csdnimg.cn/img_convert/b9dfcb60830df513bd8446b4197658b6.png)
+![alt text](image-164.png)
 
 #### 4.位示图法
 
@@ -1859,18 +1846,18 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 
 ②将相应二进制位设为“0”。
 
-![image-20210810170334688](https://img-blog.csdnimg.cn/img_convert/88f18be166ec7bc85acebf36a2ddeb3c.png)
+![alt text](image-165.png)
 
 #### 5.成组链接法
 
 空闲表法、空闲链表法不适用于大型文件系统，因为空闲表或空闲链表可能过大。UNIX系统中采用了成组链接法对磁盘空闲块进行管理。
 文件卷的目录区中专门用一个磁盘块作为“超级块”，当系统启动时需要将超级块读入内存。并且要保证内存与外存中的“超级块”数据一致。如图所示。
 
-![image-20210810170623901](https://img-blog.csdnimg.cn/img_convert/b884e81fa6bd4f0b022600eafce9b82c.png)
+![alt text](image-166.png)
 
 - 超级块中存储的内容
 
-![image-20210810170801760](https://img-blog.csdnimg.cn/img_convert/326b4386246193c4e7d558161cb21a03.png)
+![alt text](image-167.png)
 
 
 
@@ -1896,25 +1883,25 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 
 进行Create系统调用时，需要提供的几个主要参数:
 
-1. 所需的外存空间大小（如:一个盘块，即1KB)
+1. 所需的外存空间大小（如:一个盘块，即1KB）
 
-2. 文件存放路径（“D:/Demo”)
+2. 文件存放路径（“D:/Demo”）
 
-3. 文件名（这个地方默认为“新建文本文档.txt”)
+3. 文件名（这个地方默认为“新建文本文档.txt”）
 
 
    操作系统在处理Create系统调用时，主要做了两件事:
 
-1.在外存中找到文件所需的空间（结合上小节学习的空闲链表法、位示图、成组链接法等管理策略，找到空闲空间)
+1.在外存中找到文件所需的空间（结合上小节学习的空闲链表法、位示图、成组链接法等管理策略，找到空闲空间）
 2.根据文件存放路径的信息找到该目录对应的目录文件（此处就是 D:/Demo目录），在目录中创建该文件对应的目录项。目录项中包含了文件名、文件在外存中的存放位置等信息。
 
 #### 2.删除文件
 
 进行Delete系统调用时，需要提供的几个主要参数:
 
-1.文件存放路径（“D:/Demo”)
+1.文件存放路径（“D:/Demo”）
 
-2.文件名（“test.txt”)
+2.文件名（“test.txt”）
 
 操作系统在处理Delete系统调用时，主要做了几件事:
 
@@ -1927,11 +1914,11 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 #### 3.打开文件
 
 在很多操作系统中，在对文件进行操作之前，要求用户先使用open系统调用“打开文件”，需要提供的几个主要参数:
-1．文件存放路径（“D:/Demo”)
+1．文件存放路径（“D:/Demo”）
 
-2.文件名（ “test.txt”)
+2.文件名（ “test.txt”）
 
-3．要对文件的操作类型（如:r只读;rw读写等)
+3．要对文件的操作类型（如:r只读;rw读写等）
 
 操作系统在处理open系统调用时，主要做了几件事:
 
@@ -1939,11 +1926,11 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 
 2．将目录项复制到内存中的“打开文件表”中。并将对应表目的编号返回给用户。之后用户使用打开文件表的编号来指明要操作的文件。
 
-![image-20210813142750578](https://img-blog.csdnimg.cn/img_convert/244f8f3efa56916fab688288de724d43.png)
+![alt text](image-168.png)
 
 - 需要注意的是，有两张打开文件表，一个是进程自带的，另一个是系统的（只有一张）。
 
-![image-20210813142335669](https://img-blog.csdnimg.cn/img_convert/6c2bc848e4337717642c135d1eac31d1.png)
+![alt text](image-169.png)
 
 
 
@@ -1962,7 +1949,7 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 
 进程使用read系统调用完成写操作。
 
-需要指明是哪个文件（在支持“打开文件”操作的系统中，只需要提供文件在打开文件表中的索引号即可)，
+需要指明是哪个文件（在支持“打开文件”操作的系统中，只需要提供文件在打开文件表中的索引号即可），
 
 还需要指明要读入多少数据（如:读入1KB）、
 
@@ -1988,7 +1975,7 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 
 知识回顾:索引结点，是一种文件目录瘦身策略。由于检索文件时只需用到文件名，因此可以将除了文件名之外的其他信息放到索引结点中。这样目录项就只需要包含文件名、索引结点指针。
 
-![image-20210813144036702](https://img-blog.csdnimg.cn/img_convert/1a5b412df0b98fbe964d16684e05af82.png)
+![alt text](image-170.png)
 
 
 
@@ -2000,7 +1987,7 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 
 当User3访问“ccc”时，操作系统判断文件“ccc”属于Link类型文件，于是会根据其中记录的路径层层查找目录，最终找到User1的目录表中的“aaa”表项，于是就找到了文件1的索引结点。类似于快捷方式。
 
-![image-20210813144244690](https://img-blog.csdnimg.cn/img_convert/d608b1a370f5c8b07ae74529ca59a093.png)
+![alt text](image-171.png)
 
 ### 8.文件保护
 
@@ -2020,7 +2007,7 @@ b号盘块对应的字号i = b/n，位号j = b%n。
 Eg:一个最简单的加密算法――异或加密。
 假设用于加密/解密的“密码”为“01001”。
 
-![image-20210813145725112](https://img-blog.csdnimg.cn/img_convert/16b36ff5f4c1142c476390fe8675b67d.png)
+![alt text](image-172.png)
 
 优点:保密性强，不需要在系统中存储“密码”。
 
@@ -2030,19 +2017,19 @@ Eg:一个最简单的加密算法――异或加密。
 
 在每个文件的FCB（或索引结点）中增加一个访问控制列表(Access-Control List, ACL)，该表中记录了各个用户可以对该文件执行哪些操作。如图所示：
 
-![image-20210813145849324](https://img-blog.csdnimg.cn/img_convert/b17edf512d307f91a1a15cdb6a068ac4.png)
+![alt text](image-173.png)
 
 精简的访问列表:以“组”为单位，标记各“组”用户可以对文件执行哪些操作。如:分为系统管理员、文件主、文件主的伙伴、其他用户几个分组。当某用户想要访问文件时，系统会检查该用户所属的分组是否有相应的访问权限。
 
-![image-20210813145938099](https://img-blog.csdnimg.cn/img_convert/e4fff7eb5201827e7cc9ef083e72a7dd.png)
+![alt text](image-174.png)
 
 #### 4.总结
 
-![image-20210813150016165](https://img-blog.csdnimg.cn/img_convert/946de3aa6b1036fb14827d65f9b3c7f6.png)
+![alt text](image-175.png)
 
 ### 9.文件的层次结构
 
-![image-20210813150515554](https://img-blog.csdnimg.cn/img_convert/10668e3ef884278c3255e9922dbf2dda.png)
+![alt text](image-176.png)
 
 用一个例子来辅助记忆文件系统的层次结构:
 
@@ -2060,13 +2047,13 @@ Eg:一个最简单的加密算法――异或加密。
 
 - 磁盘的表面由一些磁性物质组成，可以用这些磁性物质来记录二进制数据
 - 磁盘的盘面被划分成一个个磁道。这样的一个“圈”就是一个磁道。
-- 一个磁道又被划分成一个个扇区，每个扇区就是一个“磁盘块”。各个扇区存放的数据量相同（如1KB)。
+- 一个磁道又被划分成一个个扇区，每个扇区就是一个“磁盘块”。各个扇区存放的数据量相同（如1KB）。
 
-![image-20210813151311575](https://img-blog.csdnimg.cn/img_convert/5d3e9a9610fef48c7bec9b2bdc1ca781.png)
+![alt text](image-177.png)
 
 - 所有盘面中相对位置相同的磁道组成柱面。
 
-![image-20210813151500796](https://img-blog.csdnimg.cn/img_convert/2086cd965a3b65368cc829804454175c.png)
+![alt text](image-178.png)
 
 - **可用(柱面号，盘面号，扇区号）来定位任意一个“磁盘块”。**
 - 可根据该地址读取一个“块”
@@ -2076,13 +2063,13 @@ Eg:一个最简单的加密算法――异或加密。
 
 - 磁盘分类
 
-![image-20210813151834210](https://img-blog.csdnimg.cn/img_convert/44eb50127c6e7aa9eac2063f6e4efc14.png)
+![alt text](image-179.png)
 
 ### 11.磁盘调度算法
 
 #### 1.一次磁盘读/写操作需要的时间
 
-![image-20210813155004975](https://img-blog.csdnimg.cn/img_convert/1b76fd0a459e00dddb9a38233d4bc18c.png)
+![alt text](image-180.png)
 
 - **寻找时间**(寻道时间)Ts:在读/写数据前，将磁头移动到指定磁道所花的时间。
   ①启动磁头臂是需要时间的。假设耗时为s;
@@ -2106,42 +2093,41 @@ Eg:一个最简单的加密算法――异或加密。
 
 - 根据进程请求访问磁盘的先后顺序进行调度。
 
-![image-20210813154130996](https://img-blog.csdnimg.cn/img_convert/257d07ab99e1e4c9a5454a0882fd2902.png)
+![alt text](image-181.png)
 
 #### 3. 最短寻找时间优先（SSTF）
 
 SSTF算法会优先处理的磁道是与当前磁头最近的磁道。可以保证每次的寻道时间最短，但是并不能保证总的寻道时间最短。(其实就是贪心算法的思想，只是选择眼前最优，但是总体未必最优)
 
-![image-20210813154241694](https://img-blog.csdnimg.cn/img_convert/47fabb28ddaecfd76ea4d2dfa0b4167c.png)
+![alt text](image-182.png)
 
 #### 4.扫描算法（SCAN）
 
 SSTF算法会产生饥饿的原因在于:磁头有可能在一个小区域内来回来去地移动。为了防止这个问题，可以规定，只有磁头移动到最外侧磁道的时候才能往内移动，移动到最内侧磁道的时候才能往外移动。这就是扫描算法（SCAN)的思想。由于磁头移动的方式很像电梯，因此也叫电梯算法。
 
-![image-20210813154355809](https://img-blog.csdnimg.cn/img_convert/9829ac37c98996d23f4d4bc981c76853.png)
+![alt text](image-183.png)
 
 #### 5.LOOK调度算法
 
 扫描算法（SCAN)中，只有到达最边上的磁道时才能改变磁头移动方向，事实上，处理了184号磁道的访问请求之后就不需要再往右移动磁头了。LOOK调度算法就是为了解决这个问题，如果在磁头移动方向上已经没有别的请求，就可以立即改变磁头移动方向。(边移动边观察，因此叫LOOK)。
 
-![image-20210813154445923](https://img-blog.csdnimg.cn/img_convert/750e7461ef9890cd4995284f060d32ea.png)
+![alt text](image-184.png)
 
 #### 6.循环扫描算法（C—SCAN）
 
 SCAN算法对于各个位置磁道的响应频率不平均，而C-SCAN算法就是为了解决这个问题。规定只有磁头朝某个特定方向移动时才处理磁道访问请求，而返回时直接快速移动至起始端而不处理任何请求。
 
-![image-20210813154603757](https://img-blog.csdnimg.cn/img_convert/4886bb838661f65adc18c2fdd2480e4e.png)
+![alt text](image-185.png)
 
 #### 7.C-LOOK调度算法
 
 C-SCAN 算法的主要缺点是只有到达最边上的磁道时才能改变磁头移动方向，并且磁头返回时不一定需要返回到最边缘的磁道上。C-LOOK算法就是为了解决这个问题。如果磁头移动的方向上已经没有磁道访问请求了，就可以立即让磁头返回，并且磁头只需要返回到有磁道访问请求的位置即可。
 
-![image-20210813154656781](https://img-blog.csdnimg.cn/img_convert/fdce0d6e9a21aafe91c6c34f05f0364b.png)
+![alt text](image-186.png)
 
 ### 12.减少延迟时间的方法
 
-![image-20210813160340909](https://img-blog.csdnimg.cn/img_convert/925f80e8771b6865bb4aaf7359240a22.png)
-
+![alt text](image-187.png)
 
 
 假设要连续读取橙色区域的2、3、4扇区:
@@ -2151,17 +2137,16 @@ C-SCAN 算法的主要缺点是只有到达最边上的磁道时才能改变磁�
 
 结论:磁头读入一个扇区数据后需要一小段时间处理，如果逻辑上相邻的扇区在物理上也相邻，则读入几个连续的逻辑扇区，可能需要很长的“延迟时间”。
 
-![image-20210813160402020](https://img-blog.csdnimg.cn/img_convert/fecc8f266994899bfc69f872d275fcd8.png)
-
+![alt text](image-188.png)
 #### 1.交替编号
 
 若采用交替编号的策略，即让逻辑上相邻的扇区在物理上有一定的间隔，可以使读取连续的逻辑扇区所需要的延迟时间更小。如图所示。
 
-![image-20210813160529803](https://img-blog.csdnimg.cn/img_convert/706a5c85cb0c50130e486122a77f8c02.png)
+![alt text](image-189.png)
 
 #### 2.磁盘地址结构的设计
 
-思考:为什么磁盘的物理地址是（柱面号，盘面号，扇区号)，而不是(盘面号，柱面号，扇区号)？
+思考:为什么磁盘的物理地址是（柱面号，盘面号，扇区号），而不是(盘面号，柱面号，扇区号)？
 
 答:读取地址连续的磁盘块时，采用（柱面号，盘面号，扇区号）的地址结构可以减少磁头移动消耗的时间
 
@@ -2169,24 +2154,24 @@ C-SCAN 算法的主要缺点是只有到达最边上的磁道时才能改变磁�
 
 #### 3.错位命名
 
-![image-20210813160725166](https://img-blog.csdnimg.cn/img_convert/33b98e507dedcb34fa42516b3b954afd.png)
+![alt text](image-190.png)
 
 
 
-![image-20210813160747164](https://img-blog.csdnimg.cn/img_convert/ef5527060892742253d8ba60f3d9775c.png)
+![alt text](image-191.png)
 
 ### 13.磁盘的管理
 
 #### 1.磁盘初始化
 
 磁盘初始化:
-Step 1:进行低级格式化（物理格式化），将磁盘的各个磁道划分为扇区。一个扇区通常可分为头、数据区域（如512B大小）、尾三个部分组成。管理扇区所需要的各种数据结构一般存放在头、尾两个部分，包括扇区校验码（如奇偶校验、CRC循环冗余校验码等，校验码用于校验扇区中的数据是否发生错误)
+Step 1:进行低级格式化（物理格式化），将磁盘的各个磁道划分为扇区。一个扇区通常可分为头、数据区域（如512B大小）、尾三个部分组成。管理扇区所需要的各种数据结构一般存放在头、尾两个部分，包括扇区校验码（如奇偶校验、CRC循环冗余校验码等，校验码用于校验扇区中的数据是否发生错误）
 
-Step 2:将磁盘分区，每个分区由若干柱面（磁道）组成（即分为我们熟悉的C盘、D盘、E盘)
+Step 2:将磁盘分区，每个分区由若干柱面（磁道）组成（即分为我们熟悉的C盘、D盘、E盘）
 
-step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的根目录、初始化存储空间管理所用的数据结构（如位示图、空闲分区表)
+step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的根目录、初始化存储空间管理所用的数据结构（如位示图、空闲分区表）
 
-![image-20210813161518921](https://img-blog.csdnimg.cn/img_convert/4cd21c25564fd0f4c5a686c336d5802e.png)
+![alt text](image-192.png)
 
 #### 2.引导块
 
@@ -2204,7 +2189,7 @@ step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的�
 #### 3.坏块的管理
 
 - 坏了、无法正常使用的扇区就是“坏块”。这属于硬件故障，操作系统是无法修复的。应该将坏块标记出来，以免错误地使用到它。 
-- 对于简单的磁盘，可以在逻辑格式化时（建立文件系统时)对整个磁盘进行坏块检查，标明哪些扇区是坏扇区，比如:在FAT表上标明。（在这种方式中，坏块对操作系统不透明)
+- 对于简单的磁盘，可以在逻辑格式化时（建立文件系统时）对整个磁盘进行坏块检查，标明哪些扇区是坏扇区，比如:在FAT表上标明。（在这种方式中，坏块对操作系统不透明）
 - 对于复杂的磁盘，磁盘控制器（磁盘设备内部的一个硬件部件）会维护一个坏块链表。
   在磁盘出厂前进行低级格式化（物理格式化）时就将坏块链进行初始化。
   会保留一些“备用扇区”，用于替换坏块。这种方案称为扇区备用。且这种处理方式中，坏块对操作系统透明。
@@ -2225,11 +2210,11 @@ step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的�
 
 #### 2.功能
 
-![image-20210804154622720](https://img-blog.csdnimg.cn/img_convert/b245e1b6ad88b4dfe3719359142edd4d.png)
+![alt text](image-193.png)
 
 #### 3.组成
 
-![image-20210804155007898](https://img-blog.csdnimg.cn/img_convert/8c9ebb99a1a9074a142f333bee867ea2.png)
+![alt text](image-194.png)
 
 ### 3.I/O控制方式
 
@@ -2237,60 +2222,55 @@ step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的�
 
 - 完成一次读/写操作的流程图(以读操作为例)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/306152b917fc4eadafdf980ebb4e7eee.png)
+![alt text](image-195.png)
 
 - 流程图
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/c270e30fb0374ce426893887ce4e9d3b.png)
+![alt text](image-196.png)
 
 #### 2.中断驱动方式
 
 - 由于程序直接控制方式CPU利用率低，忙等，所以提出了中断驱动方式。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/f74e1473feb475dd14eeca4f37b5a021.png)
-
-
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/c795c5127f304fc4a5f02a349bbcc9a0.png)
+![alt text](image-197.png)
+![alt text](image-198.png)
 
 #### 3.DMA方式
 
 - 虽然中断驱动方式解决了程序直接控制方式的问题，但是每一次只能读/写一个字，导致CPU频繁切换，耗费了很多时间。于是人们又发明了DMA方式。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/ce47762f25cfbf9839a181db27141e14.png)
+![alt text](image-199.png)
 
 - DMA控制器
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/98c04f667c7ed1631bff510e3fc5937c.png)
+![alt text](image-200.png)
 
-- 
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/3f387b03b08612e01e051f18ff44e33a.png)
+![alt text](image-201.png)
 
 #### 4.通道控制方式
 
 - 通道控制方式是为了解决DMA方式连续存储的问题
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/6457dfe15349fbddab5a18be6aa21916.png)
+![alt text](image-202.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/2713e1afa5f6e44bb77f1199efa43c38.png)
+![alt text](image-203.png)
 
 #### 5.四种方式总结
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/img_convert/23c164533617729d7433e1227332177d.png)
+![alt text](image-204.png)
 
 ### 4.I/O软件层次结构
 
 #### 1.知识总览
 
-![image-20210813172017447](https://img-blog.csdnimg.cn/img_convert/5847e7daab7e2dd23fa2d4358f37b71d.png)
+![alt text](image-205.png)
 
 #### 2.用户层软件
 
 - 用户层软件实现了与用户交互的接口，用户可直接使用该层提供的、与I/o操作相关的库函数对设备进行操作。
 - 用户层软件将用户请求翻译成格式化的I/o请求，并通过“系统调用”请求操作系统内核的服务。
 
-![image-20210813172214640](https://img-blog.csdnimg.cn/img_convert/756c09b8cd0bd1e5e6ad714f0ba8b070.png)
+![alt text](image-206.png)
 
 #### 3.设备独立性软件
 
@@ -2298,17 +2278,17 @@ step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的�
 
 主要功能：
 
-1. 向上层提供统一的调用接口（如read/write系统调用)
+1. 向上层提供统一的调用接口（如read/write系统调用）
 2. 设备的保护。（原理类似与文件保护。设备被看做是一种特殊的文件，不同用户对各个文件的访问权限是不一样的，同理，对设备的访问权限也不一样。）
 3. 差错处理（设备独立性软件需要对一些设备的错误进行处理）
 4. 设备的分配与回收
 5. 数据缓冲区管理（可以通过缓冲技术屏蔽设备之间数据交换单位大小和传输速度的差异）
 6. 建立逻辑设备名到物理设备名的映射关系;根据设备类型选择调用相应的驱动程序
 
-用户或用户层软件发出I/o操作相关系统调用的系统调用时，需要指明此次要操作的I/o设备的逻辑设备名（eg:去学校打印店打印时，需要选择打印机1/打印机2/打印机3，其实这些都是逻辑设备名)
+用户或用户层软件发出I/o操作相关系统调用的系统调用时，需要指明此次要操作的I/o设备的逻辑设备名（eg:去学校打印店打印时，需要选择打印机1/打印机2/打印机3，其实这些都是逻辑设备名）
 设备独立性软件需要通过“逻辑设备表（LUT，Logical UnitTable）”来确定逻辑设备对应的物理设备，并找到该设备对应的设备驱动程序。如图所示：
 
-![image-20210813172808277](https://img-blog.csdnimg.cn/img_convert/e09722205b779262ad239f569279491a.png)
+![alt text](image-207.png)
 
 操作系统系统可以采用两种方式管理逻辑设备表(LUT) :
 第一种方式，整个系统只设置一张LUT，这就意味着所有用户不能使用相同的逻辑设备名，因此这种方式只适用于单用户操作系统。
@@ -2321,27 +2301,27 @@ step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的�
 
 不同设备的内部硬件特性也不同，这些特性只有厂家才知道，因此厂家须提供与设备相对应的驱动程序，CPU执行驱动程序的指令序列，来完成设置设备寄存器，检查设备状态等工作。
 
-![image-20210813173131230](https://img-blog.csdnimg.cn/img_convert/959f5d25bffa0a2c27f15966d1bead07.png)
+![alt text](image-208.png)
 
 #### 5.中断处理程序
 
 当I/o任务完成时，I/o控制器会发送一个中断信号，系统会根据中断信号类型找到相应的中断处理程序并执行。中断处理程序的处理流程如下:
 
-![image-20210813173226846](https://img-blog.csdnimg.cn/img_convert/6331bc728bc60ecf52d671ea760e97d2.png)
+![alt text](image-209.png)
 
 #### 6.总结
 
-![image-20210813173303452](https://img-blog.csdnimg.cn/img_convert/e75bd4df046d748f7891e08bab14db8f.png)
+![alt text](image-210.png)
 
 ### 5.I/O核心子系统
 
 #### 1.知识总览
 
-![image-20210813173804207](https://img-blog.csdnimg.cn/img_convert/c0a6413a509710ba2cf7b3cd60545d68.png)
+![alt text](image-211.png)
 
 - 这些功能在哪些层次上实现呢？
 
-![image-20210813173845210](https://img-blog.csdnimg.cn/img_convert/5ae321d874294707abfd86536c4f9d64.png)
+![alt text](image-212.png)
 
 #### 2.I/O调度
 
@@ -2361,11 +2341,11 @@ step 3:进行逻辑格式化，创建文件系统。包括创建文件系统的�
 
 #### 1.脱机技术
 
-- 手工操作阶段:主机直接从l/o设备获得数据，由于设备速度慢，主机速度很快。人机速度矛盾明显，主机要浪费很多时间来等待设备。因此在批处理阶段引入了脱机输入/输出技术（用磁带完成).
+- 手工操作阶段:主机直接从l/o设备获得数据，由于设备速度慢，主机速度很快。人机速度矛盾明显，主机要浪费很多时间来等待设备。因此在批处理阶段引入了脱机输入/输出技术（用磁带完成）.
 
 Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输出操作。
 
-![image-20210813174939614](https://img-blog.csdnimg.cn/img_convert/b8655545ac79350b99d5648c9308b19a.png)
+![alt text](image-213.png)
 
 #### 2.假脱机技术
 
@@ -2376,7 +2356,7 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 - “输入进程”模拟脱机输入时的外围控制机
 - “输出进程”模拟脱机输出时的外围控制机
 
-![](https://img-blog.csdnimg.cn/img_convert/1cb679f7403e661ca47fe0cd5de69f70.png)
+![alt text](image-214.png)
 
 要实现SPOOLing 技术，必须要有多道程序技术的支持。系统会建立“输入进程”和“输出进程”。
 
@@ -2384,18 +2364,18 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 
 #### 1.知识总览
 
-![image-20210813182209052](https://img-blog.csdnimg.cn/img_convert/b325e2ddf44d20ed7843f032ed557773.png)
+![alt text](image-215.png)
 
 #### 2.设备分配时考虑的因素
 
-![image-20210813182256861](https://img-blog.csdnimg.cn/img_convert/cc7c4db27ad593251cb8949c2c574bcb.png)
+![alt text](image-216.png)
 
 ##### 1.固有属性
 
 设备的固有属性可分为三种:独占设备、共享设备、虚拟设备。
 
-- 独占设备—— 一个时段只能分配给一个进程（如打印机)
-- 共享设备――可同时分配给多个进程使用（如磁盘)，各进程往往是宏观上同时共享使用设备，而微观上交替使用。
+- 独占设备—— 一个时段只能分配给一个进程（如打印机）
+- 共享设备――可同时分配给多个进程使用（如磁盘），各进程往往是宏观上同时共享使用设备，而微观上交替使用。
 - 虚拟设备――采用SPOOLing 技术将独占设备改造成虚拟的共享设备，可同时分配给多个进程使用（如采用SPOOLing技术实现的共享打印机）
 
 ##### 2.分配算法
@@ -2427,27 +2407,27 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 
 “设备、控制器、通道”之间的关系:
 
-![image-20210813183138648](https://img-blog.csdnimg.cn/img_convert/eed8f3381d1ca8d9a3eca4c3d3940a84.png)
+![alt text](image-217.png)
 
-- **设备控制表（DCT):**系统为每个设备配置一张DCT，用于记录设备情况
+- **设备控制表（DCT）:**系统为每个设备配置一张DCT，用于记录设备情况
 
-![image-20210813183223442](https://img-blog.csdnimg.cn/img_convert/754953b8778912c40240516d506e3600.png)
+![alt text](image-218.png)
 
 - **控制器控制表(COCT):**每个设备控制器都会对应一张COCT。操作系统根据COCT的信息对控制器进行操作和管理。
 
-![image-20210813183256911](https://img-blog.csdnimg.cn/img_convert/5910d8c0e2e8b9ec83d77427a1b3dcfe.png)
+![alt text](image-219.png)
 
-- **通道控制表（CHCT):**每个通道都会对应一张CHCT。操作系统根据CHCT的信息对通道进行操作和管理。
+- **通道控制表（CHCT）:**每个通道都会对应一张CHCT。操作系统根据CHCT的信息对通道进行操作和管理。
 
-![image-20210813183402979](https://img-blog.csdnimg.cn/img_convert/2fd201a632d64cfd73b3121eabaac8d1.png)
+![alt text](image-220.png)
 
 - **系统设备表(SDT)**:记录了系统中全部设备的情况，每个设备对应一个表目。
 
-![image-20210813183445007](https://img-blog.csdnimg.cn/img_convert/ba7cc6105c8ebb3a419734edadaa39de.png)
+![alt text](image-221.png)
 
 #### 5.设备分配的步骤
 
-①根据进程请求的物理设备名查找SDT（注:物理设备名是进程请求分配设备时提供的参数)
+①根据进程请求的物理设备名查找SDT（注:物理设备名是进程请求分配设备时提供的参数）
 
 ②根据SDT找到DCT，若设备忙碌则将进程PCB挂到设备等待队列中，不忙碌则将设备分配给进程。
 
@@ -2466,29 +2446,29 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 
 改进方法:建立逻辑设备名与物理设备名的映射机制，用户编程时只需提供逻辑设备名
 
-![image-20210813183902617](https://img-blog.csdnimg.cn/img_convert/b193222294d78fd22bc3cbe099337365.png)
+![alt text](image-222.png)
 
 #### 6.设备分配步骤的改进
 
 ①根据进程请求的逻辑设备名查找SDT(注:用户编程时提供的逻辑设备名其实就是“设备类型”)
 
-②查找SDT，找到用户进程指定类型的、并且空闲的设备，将其分配给该进程。操作系统在逻辑设备表（LUT)中新增一个表项。
+②查找SDT，找到用户进程指定类型的、并且空闲的设备，将其分配给该进程。操作系统在逻辑设备表（LUT）中新增一个表项。
 
 ③根据DCT找到cOCT，若控制器忙碌则将进程PCB挂到控制器等待队列中，不忙碌则将控制器分配给进程。
 
 ④根据COCT找到CHCT，若通道忙碌则将进程PCB挂到通道等待队列中，不忙碌则将通道分配给进程。
 
-![image-20210813183835147](https://img-blog.csdnimg.cn/img_convert/4ceb806da6cb08069408544586626927.png)
+![alt text](image-223.png)
 
 - 逻辑设备表
 
-![image-20210813183947599](https://img-blog.csdnimg.cn/img_convert/bc3f8875a6fc4046cd09b15a14028d6f.png)
+![alt text](image-224.png)
 
 ### 8.缓冲区管理
 
 #### 1.知识总览
 
-![image-20210813184118658](https://img-blog.csdnimg.cn/img_convert/7584d0bcc82642831f254ac6495d8b0e.png)
+![alt text](image-225.png)
 
 #### 2.含义和作用
 
@@ -2496,36 +2476,36 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 
 缓冲区是一个存储区域，可以由专门的硬件寄存器组成，也可利用内存作为缓冲区。
 
-使用硬件作为缓冲区的成本较高，容量也较小，一般仅用在对速度要求非常高的场合（如存储器管理中所用的联想寄存器，由于对页表的访问频率极高，因此使用速度很快的联想寄存器来存放页表项的副本)
+使用硬件作为缓冲区的成本较高，容量也较小，一般仅用在对速度要求非常高的场合（如存储器管理中所用的联想寄存器，由于对页表的访问频率极高，因此使用速度很快的联想寄存器来存放页表项的副本）
 
 一般情况下，更多的是利用内存作为缓冲区，“设备独立性软件”的缓冲区管理就是要组织管理好这些缓冲区
 
 > 作用
 
-![image-20210813184305965](https://img-blog.csdnimg.cn/img_convert/1856920cb50c0e6e4719e0e92932a2ae.png)
+![alt text](image-226.png)
 
 #### 3.单缓冲
 
 假设某用户进程请求某种块设备读入若干块的数据。若采用单缓冲的策略，操作系统会在主存中为其分配一个缓冲区（若题目中没有特别说明，一个缓冲区的大小就是一个块）。如图所示
 **注意:当缓冲区数据非空时，不能往缓冲区冲入数据，只能从缓冲区把数据传出;当缓冲区为空时，可以往缓冲区冲入数据，但必须把缓冲区充满以后，才能从缓冲区把数据传出。**
 
-![image-20210813184442012](https://img-blog.csdnimg.cn/img_convert/5a212ffd1b1beccd83b63bf80ebed731.png)
+![alt text](image-227.png)
 
 - 处理一块数据的平均时间
 
-![image-20210813184559073](https://img-blog.csdnimg.cn/img_convert/395562b2e164baffc952ef7f163c4dcf.png)
+![alt text](image-228.png)
 
 #### 4.双缓冲
 
-假设某用户进程请求某种块设备读入若干块的数据。若采用双缓冲的策略，操作系统会在主存中为其分配两个缓冲区（若题目中没有特别说明，一个缓冲区的大小就是一个块)。
+假设某用户进程请求某种块设备读入若干块的数据。若采用双缓冲的策略，操作系统会在主存中为其分配两个缓冲区（若题目中没有特别说明，一个缓冲区的大小就是一个块）。
 
 - 假设T>C+M
 
-![image-20210813184707380](https://img-blog.csdnimg.cn/img_convert/e5ec5cd1f55a449d7e0470a32a6a066e.png)
+![alt text](image-229.png)
 
 - 假设T<C+M
 
-![image-20210813184750672](https://img-blog.csdnimg.cn/img_convert/5a08a579ba2812f775a45fd937aaf195.png)
+![alt text](image-230.png)
 
 
 
@@ -2536,7 +2516,7 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 将多个大小相等的缓冲区链接成一个循环队列。
 注:以下图示中，橙色表示已充满数据的缓冲区，绿色表示空缓冲区。
 
-![image-20210813184911606](https://img-blog.csdnimg.cn/img_convert/9677c6126845a9fb17c029f01deda580.png)
+![alt text](image-231.png)
 
 #### 6.缓冲池
 
@@ -2544,6 +2524,6 @@ Tips:为什么称为“脱机”？一脱离主机的控制进行的输入/输�
 
 这些缓冲区按使用状况可以分为:空缓冲队列、装满输入数据的缓冲队列(输入队列)、装满输出数据的缓冲队列（输出队列）。
 
-另外，根据一个缓冲区在实际运算中扮演的功能不同，又设置了四种工作缓冲区:用于收容输入数据的工作缓冲区(hin)、用于提取输入数据的工作缓冲区（sin)、用于收容输出数据的工作缓冲区(hout） 、用于提取输出数据的工作缓冲区(sout)。
+另外，根据一个缓冲区在实际运算中扮演的功能不同，又设置了四种工作缓冲区:用于收容输入数据的工作缓冲区(hin)、用于提取输入数据的工作缓冲区（sin）、用于收容输出数据的工作缓冲区（hout） 、用于提取输出数据的工作缓冲区(sout)。
 
-![image-20210813185014461](https://img-blog.csdnimg.cn/img_convert/12d72547f589f1652a3e165289a83ec7.png)
+![alt text](image-232.png)
